@@ -48,7 +48,7 @@ public class ExampleDataset {
         CardData item2 = new CardData();
         item2.setMainBackgroundResource(R.drawable.nature);
         item2.setHeadBackgroundResource(R.drawable.nature_head);
-        item2.setHeadTitle("Home");
+        item2.setHeadTitle("Events");
         item2.setPersonName("Tina Caldwell");
         item2.setPersonMessage("Nunquam perdere clabulare.");
         item2.setListItems(prepareCommentsArray());
