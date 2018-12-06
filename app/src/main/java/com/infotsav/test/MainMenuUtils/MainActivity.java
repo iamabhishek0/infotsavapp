@@ -15,8 +15,14 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.infotsav.test.AboutusActivity;
+import com.infotsav.test.EventsActivity;
 import com.infotsav.test.HomeActivity;
 import com.infotsav.test.R;
+import com.infotsav.test.RegisterActivity;
+import com.infotsav.test.SponsersActivity;
+import com.infotsav.test.TreasurehuntActivity;
+import com.infotsav.test.UpdatesActivity;
 import com.infotsav.test.Utils.Constants;
 import com.ramotion.expandingcollection.ECBackgroundSwitcherView;
 import com.ramotion.expandingcollection.ECCardData;
@@ -84,6 +90,30 @@ public class MainActivity extends Activity {
                         if(cardData.getHeadTitle().equals(Constants.Home))
                         {
                             startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                        }
+                        else if(cardData.getHeadTitle().equals(Constants.Events))
+                        {
+                            startActivity(new Intent(MainActivity.this, EventsActivity.class));
+                        }
+                        else if(cardData.getHeadTitle().equals(Constants.Register))
+                        {
+                            startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+                        }
+                        else if(cardData.getHeadTitle().equals(Constants.Updates))
+                        {
+                            startActivity(new Intent(MainActivity.this, UpdatesActivity.class));
+                        }
+                        else if(cardData.getHeadTitle().equals(Constants.Treasurehunt))
+                        {
+                            startActivity(new Intent(MainActivity.this, TreasurehuntActivity.class));
+                        }
+                        else if(cardData.getHeadTitle().equals(Constants.Sponsers))
+                        {
+                            startActivity(new Intent(MainActivity.this, SponsersActivity.class));
+                        }
+                        else if(cardData.getHeadTitle().equals(Constants.Aboutus))
+                        {
+                            startActivity(new Intent(MainActivity.this, AboutusActivity.class));
                         }
                     }
                 });
