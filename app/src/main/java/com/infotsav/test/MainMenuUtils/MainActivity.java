@@ -24,6 +24,7 @@ import com.infotsav.test.SponsersActivity;
 import com.infotsav.test.TreasurehuntActivity;
 import com.infotsav.test.UpdatesActivity;
 import com.infotsav.test.Utils.Constants;
+import com.infotsav.test.foldingView.FoldingActivity;
 import com.ramotion.expandingcollection.ECBackgroundSwitcherView;
 import com.ramotion.expandingcollection.ECCardData;
 import com.ramotion.expandingcollection.ECPagerView;
@@ -89,7 +90,7 @@ public class MainActivity extends Activity {
                         
                         if(cardData.getHeadTitle().equals(Constants.Home))
                         {
-                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            startActivity(new Intent(MainActivity.this, FoldingActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Events))
                         {
