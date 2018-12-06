@@ -18,7 +18,7 @@ public class ExampleDataset {
         CardData item5 = new CardData();
         item5.setMainBackgroundResource(R.drawable.attractions);
         item5.setHeadBackgroundResource(R.drawable.attractions_head);
-        item5.setHeadTitle("Home");
+        item5.setHeadTitle("Home1");
         item5.setPersonMessage("Usus de bassus buxum, desiderium index!");
         item5.setPersonName("Marjorie Ellis");
         item5.setPersonPictureResource(R.drawable.marjorie_ellis);
