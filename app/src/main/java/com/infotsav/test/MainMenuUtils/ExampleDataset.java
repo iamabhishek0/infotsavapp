@@ -28,7 +28,7 @@ public class ExampleDataset {
         CardData item4 = new CardData();
         item4.setMainBackgroundResource(R.drawable.city_scape);
         item4.setHeadBackgroundResource(R.drawable.city_scape_head);
-        item4.setHeadTitle("Home");
+        item4.setHeadTitle("About Us");
         item4.setPersonMessage("Solems manducare, tanquam neuter verpa.");
         item4.setPersonName("Mattew Jordan");
         item4.setPersonPictureResource(R.drawable.mattew_jordan);
