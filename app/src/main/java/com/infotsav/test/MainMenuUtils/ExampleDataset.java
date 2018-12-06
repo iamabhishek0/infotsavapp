@@ -10,15 +10,15 @@ import java.util.Random;
 
 public class ExampleDataset {
 
-    private List<ECCardData> dataset;
+    private ArrayList<ECCardData> dataset;
 
     public ExampleDataset() {
-        dataset = new ArrayList<>(7);
+        dataset = new ArrayList<>();
 
         CardData item5 = new CardData();
         item5.setMainBackgroundResource(R.drawable.attractions);
         item5.setHeadBackgroundResource(R.drawable.attractions_head);
-        item5.setHeadTitle("Events");
+        item5.setHeadTitle("Home");
         item5.setPersonMessage("Usus de bassus buxum, desiderium index!");
         item5.setPersonName("Marjorie Ellis");
         item5.setPersonPictureResource(R.drawable.marjorie_ellis);
@@ -28,7 +28,7 @@ public class ExampleDataset {
         CardData item4 = new CardData();
         item4.setMainBackgroundResource(R.drawable.city_scape);
         item4.setHeadBackgroundResource(R.drawable.city_scape_head);
-        item4.setHeadTitle("Workshop");
+        item4.setHeadTitle("Home");
         item4.setPersonMessage("Solems manducare, tanquam neuter verpa.");
         item4.setPersonName("Mattew Jordan");
         item4.setPersonPictureResource(R.drawable.mattew_jordan);
@@ -38,7 +38,7 @@ public class ExampleDataset {
         CardData item3 = new CardData();
         item3.setMainBackgroundResource(R.drawable.cuisine);
         item3.setHeadBackgroundResource(R.drawable.cuisine_head);
-        item3.setHeadTitle("Cuisine");
+        item3.setHeadTitle("Home");
         item3.setPersonMessage("Magnum lacteas ducunt ad orexis.");
         item3.setPersonName("Ross Rodriguez");
         item3.setPersonPictureResource(R.drawable.ross_rodriguez);
@@ -48,7 +48,7 @@ public class ExampleDataset {
         CardData item2 = new CardData();
         item2.setMainBackgroundResource(R.drawable.nature);
         item2.setHeadBackgroundResource(R.drawable.nature_head);
-        item2.setHeadTitle("Nature");
+        item2.setHeadTitle("Home");
         item2.setPersonName("Tina Caldwell");
         item2.setPersonMessage("Nunquam perdere clabulare.");
         item2.setListItems(prepareCommentsArray());

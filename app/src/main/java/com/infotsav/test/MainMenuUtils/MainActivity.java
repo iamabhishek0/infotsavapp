@@ -3,6 +3,7 @@ package com.infotsav.test.MainMenuUtils;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +15,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.infotsav.test.HomeActivity;
 import com.infotsav.test.R;
+import com.infotsav.test.Utils.Constants;
 import com.ramotion.expandingcollection.ECBackgroundSwitcherView;
 import com.ramotion.expandingcollection.ECCardData;
 import com.ramotion.expandingcollection.ECPagerView;
@@ -33,7 +36,7 @@ public class MainActivity extends Activity {
         // Create adapter for pager
         ECPagerViewAdapter adapter = new ECPagerViewAdapter(this, new ExampleDataset().getDataset()) {
             @Override
-            public void instantiateCard(LayoutInflater inflaterService, ViewGroup head, ListView list, final ECCardData data) {
+            public void instantiateCard(LayoutInflater inflaterService, final ViewGroup head, ListView list, final ECCardData data) {
                 final CardData cardData = (CardData) data;
 
                 // Create adapter for list inside a card and set adapter to card content
@@ -74,7 +77,14 @@ public class MainActivity extends Activity {
                 head.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(final View v) {
-                        ecPagerView.toggle();
+                        //ecPagerView.toggle();
+                        //TODO: Get the name of the title (from cardData.get..()), then match them with enums, for example if head's title is home then go to home activity,
+                        //TODO: and if its an event go to event library, transitions to activity can be added later that will make it look smoother.
+                        
+                        if(cardData.getHeadTitle().equals(Constants.Home))
+                        {
+                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                        }
                     }
                 });
             }
