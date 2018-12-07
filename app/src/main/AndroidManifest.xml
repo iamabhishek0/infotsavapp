@@ -22,7 +22,9 @@
         <activity android:name=".UpdatesActivity" />
         <activity android:name=".AboutusActivity" />
         <activity android:name=".SponsersActivity" />
-        <activity android:name=".TreasurehuntActivity"></activity>
+        <activity android:name=".foldingView.FoldingActivity" />
+        <activity android:name=".TreasurehuntActivity">
+        </activity>
     </application>
 
 </manifest>
