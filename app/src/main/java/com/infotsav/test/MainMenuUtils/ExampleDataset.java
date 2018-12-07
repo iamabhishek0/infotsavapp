@@ -19,7 +19,7 @@ public class ExampleDataset {
         item7.setMainBackgroundResource(R.drawable.attractions);
         item7.setHeadBackgroundResource(R.drawable.attractions_head);
         item7.setHeadTitle("Home");
-        item7.setPersonMessage("Usus de bassus buxum, desiderium index!");
+        item7.setPersonMessage("This is the home card");
         item7.setPersonName("Marjorie Ellis");
         item7.setPersonPictureResource(R.drawable.marjorie_ellis);
         item7.setListItems(prepareCommentsArray());
