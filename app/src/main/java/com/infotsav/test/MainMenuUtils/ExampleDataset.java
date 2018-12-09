@@ -16,8 +16,8 @@ public class ExampleDataset {
         dataset = new ArrayList<>();
 
         CardData item7 = new CardData();
-        item7.setMainBackgroundResource(R.drawable.thormobile);
-        item7.setHeadBackgroundResource(R.drawable.thor);
+        item7.setMainBackgroundResource(R.drawable.thor2);
+        item7.setHeadBackgroundResource(R.drawable.thor3);
         item7.setHeadTitle("Home");
         item7.setPersonMessage("This is the home card");
         item7.setPersonName("Marjorie Ellis");
@@ -26,7 +26,7 @@ public class ExampleDataset {
         dataset.add(item7);
 
         CardData item6 = new CardData();
-        item6.setMainBackgroundResource(R.drawable.blackwidowmobile);
+        item6.setMainBackgroundResource(R.drawable.blackwidow2);
         item6.setHeadBackgroundResource(R.drawable.blackwidow);
         item6.setHeadTitle("Events");
         item6.setPersonMessage("Usus de bassus buxum, desiderium index!");
@@ -36,8 +36,8 @@ public class ExampleDataset {
         dataset.add(item6);
 
         CardData item5 = new CardData();
-        item5.setMainBackgroundResource(R.drawable.captainamericamobile);
-        item5.setHeadBackgroundResource(R.drawable.captainamerica);
+        item5.setMainBackgroundResource(R.drawable.captainamerica2);
+        item5.setHeadBackgroundResource(R.drawable.captainamerica3);
         item5.setHeadTitle("Register");
         item5.setPersonMessage("Usus de bassus buxum, desiderium index!");
         item5.setPersonName("Marjorie Ellis");
@@ -46,8 +46,8 @@ public class ExampleDataset {
         dataset.add(item5);
 
         CardData item4 = new CardData();
-        item4.setMainBackgroundResource(R.drawable.ironmanmobile);
-        item4.setHeadBackgroundResource(R.drawable.ironman);
+        item4.setMainBackgroundResource(R.drawable.ironman2);
+        item4.setHeadBackgroundResource(R.drawable.ironman3);
         item4.setHeadTitle("Updates");
         item4.setPersonMessage("Solems manducare, tanquam neuter verpa.");
         item4.setPersonName("Mattew Jordan");
@@ -66,8 +66,8 @@ public class ExampleDataset {
         dataset.add(item3);
 
         CardData item2 = new CardData();
-        item2.setMainBackgroundResource(R.drawable.spideymobile);
-        item2.setHeadBackgroundResource(R.drawable.spidey);
+        item2.setMainBackgroundResource(R.drawable.spidey3);
+        item2.setHeadBackgroundResource(R.drawable.spidey2);
         item2.setHeadTitle("Sponsors");
         item2.setPersonName("Tina Caldwell");
         item2.setPersonMessage("Nunquam perdere clabulare.");
@@ -76,7 +76,7 @@ public class ExampleDataset {
         dataset.add(item2);
 
         CardData item1 = new CardData();
-        item1.setMainBackgroundResource(R.drawable.ultronmobile);
+        item1.setMainBackgroundResource(R.drawable.ultron2);
         item1.setHeadBackgroundResource(R.drawable.ultron);
         item1.setHeadTitle("About Us");
         item1.setPersonMessage("Cur adelphis studere?");
