@@ -16,8 +16,8 @@ public class ExampleDataset {
         dataset = new ArrayList<>();
 
         CardData item7 = new CardData();
-        item7.setMainBackgroundResource(R.drawable.attractions);
-        item7.setHeadBackgroundResource(R.drawable.attractions_head);
+        item7.setMainBackgroundResource(R.drawable.thormobile);
+        item7.setHeadBackgroundResource(R.drawable.thor);
         item7.setHeadTitle("Home");
         item7.setPersonMessage("This is the home card");
         item7.setPersonName("Marjorie Ellis");
@@ -26,8 +26,8 @@ public class ExampleDataset {
         dataset.add(item7);
 
         CardData item6 = new CardData();
-        item6.setMainBackgroundResource(R.drawable.attractions);
-        item6.setHeadBackgroundResource(R.drawable.attractions_head);
+        item6.setMainBackgroundResource(R.drawable.blackwidowmobile);
+        item6.setHeadBackgroundResource(R.drawable.blackwidow);
         item6.setHeadTitle("Events");
         item6.setPersonMessage("Usus de bassus buxum, desiderium index!");
         item6.setPersonName("Marjorie Ellis");
@@ -36,8 +36,8 @@ public class ExampleDataset {
         dataset.add(item6);
 
         CardData item5 = new CardData();
-        item5.setMainBackgroundResource(R.drawable.attractions);
-        item5.setHeadBackgroundResource(R.drawable.attractions_head);
+        item5.setMainBackgroundResource(R.drawable.captainamericamobile);
+        item5.setHeadBackgroundResource(R.drawable.captainamerica);
         item5.setHeadTitle("Register");
         item5.setPersonMessage("Usus de bassus buxum, desiderium index!");
         item5.setPersonName("Marjorie Ellis");
@@ -46,8 +46,8 @@ public class ExampleDataset {
         dataset.add(item5);
 
         CardData item4 = new CardData();
-        item4.setMainBackgroundResource(R.drawable.city_scape);
-        item4.setHeadBackgroundResource(R.drawable.city_scape_head);
+        item4.setMainBackgroundResource(R.drawable.ironmanmobile);
+        item4.setHeadBackgroundResource(R.drawable.ironman);
         item4.setHeadTitle("Updates");
         item4.setPersonMessage("Solems manducare, tanquam neuter verpa.");
         item4.setPersonName("Mattew Jordan");
@@ -56,8 +56,8 @@ public class ExampleDataset {
         dataset.add(item4);
 
         CardData item3 = new CardData();
-        item3.setMainBackgroundResource(R.drawable.cuisine);
-        item3.setHeadBackgroundResource(R.drawable.cuisine_head);
+        item3.setMainBackgroundResource(R.drawable.nickfurymobile);
+        item3.setHeadBackgroundResource(R.drawable.nickfury);
         item3.setHeadTitle("Treasure Hunt");
         item3.setPersonMessage("Magnum lacteas ducunt ad orexis.");
         item3.setPersonName("Ross Rodriguez");
@@ -66,9 +66,9 @@ public class ExampleDataset {
         dataset.add(item3);
 
         CardData item2 = new CardData();
-        item2.setMainBackgroundResource(R.drawable.nature);
-        item2.setHeadBackgroundResource(R.drawable.nature_head);
-        item2.setHeadTitle("Sponsers");
+        item2.setMainBackgroundResource(R.drawable.spideymobile);
+        item2.setHeadBackgroundResource(R.drawable.spidey);
+        item2.setHeadTitle("Sponsors");
         item2.setPersonName("Tina Caldwell");
         item2.setPersonMessage("Nunquam perdere clabulare.");
         item2.setListItems(prepareCommentsArray());
@@ -76,8 +76,8 @@ public class ExampleDataset {
         dataset.add(item2);
 
         CardData item1 = new CardData();
-        item1.setMainBackgroundResource(R.drawable.night_life);
-        item1.setHeadBackgroundResource(R.drawable.night_life_head);
+        item1.setMainBackgroundResource(R.drawable.ultronmobile);
+        item1.setHeadBackgroundResource(R.drawable.ultron);
         item1.setHeadTitle("About Us");
         item1.setPersonMessage("Cur adelphis studere?");
         item1.setPersonName("Wallace Sutton");
