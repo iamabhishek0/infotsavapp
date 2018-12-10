@@ -98,7 +98,7 @@ public class ExampleDataset {
     }
 
     public List<ECCardData> getDataset() {
-        //Collections.shuffle(dataset);
+       // Collections.shuffle(dataset);
         return dataset;
     }
 
