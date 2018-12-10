@@ -14,6 +14,7 @@ import java.util.List;
 public class ContactusAdapter extends BaseAdapter {
 
     private Context mContext;
+    private static String phone;
     private List<Contactus_details> mContactus_detailslist;
 
 
@@ -47,12 +48,14 @@ public class ContactusAdapter extends BaseAdapter {
         ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
 
 
+
         person_name.setText(mContactus_detailslist.get(position).getName());
         person_email.setText(mContactus_detailslist.get(position).getEmail());
         person_department.setText(mContactus_detailslist.get(position).getDept());
         person_call.setText(mContactus_detailslist.get(position).getCall());
         person_image.setImageResource(mContactus_detailslist.get(position).getImage());
         view.setTag(mContactus_detailslist.get(position).getId());
+        phone=mContactus_detailslist.get(position).getCall();
         return view;
     }
 }
