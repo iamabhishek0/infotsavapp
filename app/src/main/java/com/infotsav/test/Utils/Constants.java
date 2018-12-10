@@ -7,7 +7,7 @@ public class Constants {
     public static final String Updates = "Updates";
     public static final String Contactus = "Contact Us";
     public static final String Aboutus = "About Us";
-    public static final String Sponsers = "Sponsers";
+    public static final String Sponsors = "Sponsors";
     public static final String Treasurehunt = "Treasure Hunt";
 
 

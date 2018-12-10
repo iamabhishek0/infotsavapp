@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.infotsav.test.R;
 
-public class SponsersActivity extends AppCompatActivity {
+public class SponsorsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

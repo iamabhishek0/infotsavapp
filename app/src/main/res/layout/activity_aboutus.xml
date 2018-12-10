@@ -6,4 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".Main_Activities.AboutusActivity">
 
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="title"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="190dp"
+                android:layout_alignParentBottom="true"
+                >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:onClick="fb"
+                    android:text="facebook"
+                    tools:layout_editor_absoluteX="120dp"
+                    tools:layout_editor_absoluteY="210dp"
+                    android:layout_alignParentBottom="true"
+                    />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="instagram"
+
+                    tools:layout_editor_absoluteX="120dp"
+                    tools:layout_editor_absoluteY="210dp"
+                    android:onClick="inst"
+                    android:layout_alignParentBottom="true"
+                    />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="twitter"
+
+                    tools:layout_editor_absoluteX="120dp"
+                    tools:layout_editor_absoluteY="210dp"
+                    android:onClick="twi"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="lin"
+                    android:text="linkedin"
+                    tools:layout_editor_absoluteX="120dp"
+                    tools:layout_editor_absoluteY="210dp"
+                    android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
 </android.support.constraint.ConstraintLayout>
