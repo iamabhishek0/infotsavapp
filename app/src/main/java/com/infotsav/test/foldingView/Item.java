@@ -2,6 +2,8 @@ package com.infotsav.test.foldingView;
 
 import android.view.View;
 
+import com.infotsav.test.R;
+
 import java.util.ArrayList;
 
 /**
@@ -11,10 +13,10 @@ import java.util.ArrayList;
 public class Item {
 
     private String price;
-    private String pledgePrice;
-    private String fromAddress;
-    private String toAddress;
-    private int requestsCount;
+    private int event_image;
+    private String event_detail_short;
+    private String venue_event;
+    private String time_event;
     private String date;
     private String time;
 
@@ -23,12 +25,12 @@ public class Item {
     public Item() {
     }
 
-    public Item(String price, String pledgePrice, String fromAddress, String toAddress, int requestsCount, String date, String time) {
+    public Item(String price, int event_image, String event_detail_short, String venue_event, String time_event, String date, String time) {
         this.price = price;
-        this.pledgePrice = pledgePrice;
-        this.fromAddress = fromAddress;
-        this.toAddress = toAddress;
-        this.requestsCount = requestsCount;
+        this.event_image = event_image;
+        this.event_detail_short = event_detail_short;
+        this.venue_event = venue_event;
+        this.time_event = time_event;
         this.date = date;
         this.time = time;
     }
@@ -41,36 +43,36 @@ public class Item {
         this.price = price;
     }
 
-    public String getPledgePrice() {
-        return pledgePrice;
+    public int getEvent_image() {
+        return event_image;
     }
 
-    public void setPledgePrice(String pledgePrice) {
-        this.pledgePrice = pledgePrice;
+    public void setEvent_image(int event_image) {
+        this.event_image = event_image;
     }
 
-    public String getFromAddress() {
-        return fromAddress;
+    public String getEvent_detail_short() {
+        return event_detail_short;
     }
 
-    public void setFromAddress(String fromAddress) {
-        this.fromAddress = fromAddress;
+    public void setEvent_detail_short(String event_detail_short) {
+        this.event_detail_short = event_detail_short;
     }
 
-    public String getToAddress() {
-        return toAddress;
+    public String getVenue_event() {
+        return venue_event;
     }
 
-    public void setToAddress(String toAddress) {
-        this.toAddress = toAddress;
+    public void setVenue_event(String venue_event) {
+        this.venue_event = venue_event;
     }
 
-    public int getRequestsCount() {
-        return requestsCount;
+    public String getTime_event() {
+        return time_event;
     }
 
-    public void setRequestsCount(int requestsCount) {
-        this.requestsCount = requestsCount;
+    public void setTime_event(String time_event) {
+        this.time_event = time_event;
     }
 
     public String getDate() {
@@ -104,13 +106,13 @@ public class Item {
 
         Item item = (Item) o;
 
-        if (requestsCount != item.requestsCount) return false;
+        if (time_event != item.time_event) return false;
         if (price != null ? !price.equals(item.price) : item.price != null) return false;
-        if (pledgePrice != null ? !pledgePrice.equals(item.pledgePrice) : item.pledgePrice != null)
+        //if (event_image != null ? !event_image.equals(item.event_image) : item.event_image != null)
+            //return false;
+        if (event_detail_short != null ? !event_detail_short.equals(item.event_detail_short) : item.event_detail_short != null)
             return false;
-        if (fromAddress != null ? !fromAddress.equals(item.fromAddress) : item.fromAddress != null)
-            return false;
-        if (toAddress != null ? !toAddress.equals(item.toAddress) : item.toAddress != null)
+        if (venue_event != null ? !venue_event.equals(item.venue_event) : item.venue_event != null)
             return false;
         if (date != null ? !date.equals(item.date) : item.date != null) return false;
         return !(time != null ? !time.equals(item.time) : item.time != null);
@@ -120,10 +122,10 @@ public class Item {
     @Override
     public int hashCode() {
         int result = price != null ? price.hashCode() : 0;
-        result = 31 * result + (pledgePrice != null ? pledgePrice.hashCode() : 0);
-        result = 31 * result + (fromAddress != null ? fromAddress.hashCode() : 0);
-        result = 31 * result + (toAddress != null ? toAddress.hashCode() : 0);
-        result = 31 * result + requestsCount;
+        //result = 31 * result + (event_image != null ? event_image.hashCode() : 0);
+        result = 31 * result + (event_detail_short != null ? event_detail_short.hashCode() : 0);
+        result = 31 * result + (venue_event != null ? venue_event.hashCode() : 0);
+        //result = 31 * result + time_event;
         result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
         return result;
@@ -134,11 +136,11 @@ public class Item {
      */
     public static ArrayList<Item> getTestingList() {
         ArrayList<Item> items = new ArrayList<>();
-        items.add(new Item("$14", "$270", "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "W 139th St, NY, 10030", 3, "TODAY", "05:10 PM"));
-        items.add(new Item("$23", "$116", "W 36th St, NY, 10015", "W 114th St, NY, 10037", 10, "TODAY", "11:10 AM"));
-        items.add(new Item("$63", "$350", "W 36th St, NY, 10029", "56th Ave, NY, 10041", 0, "TODAY", "07:11 PM"));
-        items.add(new Item("$19", "$150", "12th Ave, NY, 10012", "W 57th St, NY, 10048", 8, "TODAY", "4:15 AM"));
-        items.add(new Item("$5", "$300", "56th Ave, NY, 10041", "W 36th St, NY, 10029", 0, "TODAY", "06:15 PM"));
+        items.add(new Item("$14", R.drawable.ultron60port, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "E-Block", "3:30PM", "TODAY", "05:10 PM"));
+        items.add(new Item("$23", R.drawable.blackwidow60port, "W 36th St, NY, 10015", "B-Block", "10:00AM", "TODAY", "11:10 AM"));
+        items.add(new Item("$63", R.drawable.captainamerica60port, "W 36th St, NY, 10029", "A-Block", "5:00PM", "TODAY", "07:11 PM"));
+        items.add(new Item("$19", R.drawable.nickfurry60port, "12th Ave, NY, 10012", "C-Block", "2:30PM", "TODAY", "4:15 AM"));
+        items.add(new Item("$5", R.drawable.thor60port, "56th Ave, NY, 10041", "D-Block", "6:00AM", "TODAY", "06:15 PM"));
         return items;
 
     }

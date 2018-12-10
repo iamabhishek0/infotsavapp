@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/order_id_mock"
+            android:text="Trove Trace"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
@@ -31,7 +31,8 @@
             android:text="@string/price_mock"
             android:textColor="@android:color/white"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="gone"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -39,7 +40,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/menu_icon" />
+            android:src="@drawable/menu_icon"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 
@@ -56,7 +58,7 @@
             android:src="@drawable/head_image" />
 
         <TextView
-            android:id="@+id/head_image_left_text"
+            android:id="@+id/time_event1"
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,18 +68,20 @@
             android:paddingBottom="10dp"
             android:paddingLeft="20dp"
             android:paddingStart="20dp"
-            android:text="@string/requests_count_mock" />
+            android:text="@string/requests_count_mock"
+            android:visibility="gone"/>
 
         <TextView
             style="@style/ContentImageBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/head_image_left_text"
-            android:layout_alignLeft="@id/head_image_left_text"
-            android:layout_alignStart="@id/head_image_left_text"
+            android:layout_above="@id/time_event1"
+            android:layout_alignLeft="@id/time_event1"
+            android:layout_alignStart="@id/time_event1"
             android:paddingLeft="20dp"
             android:paddingStart="20dp"
-            android:text="@string/time_badge" />
+            android:text="@string/time_badge"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/head_image_right_text"
@@ -90,7 +94,8 @@
             android:paddingBottom="10dp"
             android:paddingEnd="20dp"
             android:paddingRight="20dp"
-            android:text="@string/venue_mock" />
+            android:text="@string/venue_mock"
+            android:visibility="gone"/>
 
         <TextView
             style="@style/ContentImageBadgeTitle"
@@ -99,7 +104,8 @@
             android:layout_above="@id/head_image_right_text"
             android:layout_alignLeft="@id/head_image_right_text"
             android:layout_alignStart="@id/head_image_right_text"
-            android:text="@string/venue_badge" />
+            android:text="@string/venue_badge"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/head_image_center_text"
@@ -109,7 +115,8 @@
             android:layout_alignBottom="@id/head_image"
             android:layout_centerHorizontal="true"
             android:paddingBottom="10dp"
-            android:text="@string/pledge_mock" />
+            android:text="@string/pledge_mock"
+            android:visibility="gone"/>
 
         <TextView
             style="@style/ContentImageBadgeTitle"
@@ -118,7 +125,8 @@
             android:layout_above="@id/head_image_center_text"
             android:layout_alignLeft="@id/head_image_center_text"
             android:layout_alignStart="@id/head_image_center_text"
-            android:text="@string/pledge_badge" />
+            android:text="PRIZE"
+            android:visibility="gone"/>
 
 
     </RelativeLayout>
@@ -147,7 +155,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="5dp"
-                android:text="@string/sender_badge" />
+                android:text="DESCRIPTION" />
 
             <ImageView
                 android:id="@+id/content_avatar"
@@ -155,16 +163,15 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/content_avatar_title"
                 android:scaleType="centerCrop"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/avatar"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/content_name_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/content_avatar"
-                android:layout_marginBottom="2dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_toEndOf="@id/content_avatar"
                 android:layout_toRightOf="@id/content_avatar"
                 android:text="@string/client_name_mock"
@@ -179,7 +186,8 @@
                 android:layout_alignLeft="@id/content_name_view"
                 android:layout_alignStart="@id/content_name_view"
                 android:layout_below="@id/content_name_view"
-                android:src="@drawable/stars" />
+                android:src="@drawable/stars"
+                android:visibility="gone"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -192,7 +200,8 @@
                 android:layout_toRightOf="@id/content_rating_stars"
                 android:text="@string/rating_mock"
                 android:textColor="@color/contentBadgeTitle"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="gone"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -200,7 +209,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/arrow" />
+                android:src="@drawable/arrow"
+                android:visibility="gone"/>
 
         </RelativeLayout>
 
@@ -231,7 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/from_badge" />
+                    android:text="Event Heads" />
 
                 <TextView
                     android:id="@+id/content_from_address_1"
@@ -240,7 +250,7 @@
                     android:layout_alignLeft="@id/content_from_badge"
                     android:layout_alignStart="@id/content_from_badge"
                     android:layout_below="@id/content_from_badge"
-                    android:text="@string/content_from1_mock"
+                    android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -252,9 +262,10 @@
                     android:layout_alignLeft="@id/content_from_address_1"
                     android:layout_alignStart="@id/content_from_address_1"
                     android:layout_below="@id/content_from_address_1"
-                    android:text="@string/content_from2_mock"
+                    android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -270,7 +281,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/to_badge" />
+                    android:text="Event Organizers " />
 
                 <TextView
                     android:id="@+id/content_to_address_1"
@@ -279,7 +290,7 @@
                     android:layout_alignLeft="@id/content_to_badge"
                     android:layout_alignStart="@id/content_to_badge"
                     android:layout_below="@id/content_to_badge"
-                    android:text="@string/content_to1_mock"
+                    android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -291,9 +302,10 @@
                     android:layout_alignLeft="@id/content_to_address_1"
                     android:layout_alignStart="@id/content_to_address_1"
                     android:layout_below="@id/content_to_address_1"
-                    android:text="@string/content_to2_mock"
+                    android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -301,7 +313,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/arrow" />
+                    android:src="@drawable/arrow"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
@@ -334,7 +347,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/delivery_date_badge" />
+                    android:text="PRIZE" />
 
                 <TextView
                     android:id="@+id/content_delivery_time"
@@ -343,7 +356,7 @@
                     android:layout_alignLeft="@id/content_delivery_date_badge"
                     android:layout_alignStart="@id/content_delivery_date_badge"
                     android:layout_below="@id/content_delivery_date_badge"
-                    android:text="@string/delivery_time_mock"
+                    android:text="To be announced"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -357,14 +370,16 @@
                     android:layout_below="@id/content_delivery_time"
                     android:text="@string/delivery_date_mock"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/content_deadline_badge"
@@ -409,7 +424,7 @@
             android:layout_marginTop="16dp"
             android:background="@color/btnRequest"
             android:padding="10dp"
-            android:text="@string/request_btn_text"
+            android:text="REGISTER"
             android:textAlignment="center"
             android:textColor="@color/mainTextColor"
             android:textSize="20sp" />
@@ -421,7 +436,8 @@
             android:text="@string/btn_annotation_mock"
             android:textAlignment="center"
             android:textColor="@color/contentBadgeTitle"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:visibility="gone"/>
 
     </LinearLayout>
 
