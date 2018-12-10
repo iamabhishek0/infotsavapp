@@ -25,13 +25,17 @@ public class ContactusActivity extends AppCompatActivity {
 
         lvcontactus=(ListView)findViewById(R.id.listview_contactus);
         mContactus_detailslist =new ArrayList<>();
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth","sidvaish@gmail.com","Tech","9149386335",R.drawable.barry_allen));
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth1","sidvaish1@gmail.com","Tech1","9149386335",R.drawable.barry_allen));
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth2","sidvaish2@gmail.com","Tech2","9149386335",R.drawable.barry_allen));
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth3","sidvaish3@gmail.com","Tech3","9149386335",R.drawable.barry_allen));
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth4","sidvaish4@gmail.com","Tech4","9149386335",R.drawable.barry_allen));
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth5","sidvaish5@gmail.com","Tech5","9149386335",R.drawable.barry_allen));
-        mContactus_detailslist.add(new Contactus_details(1,"Siddharth6","sidvaish6@gmail.com","Tech6","9149386335",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(1,"JUHI TIWARI","juhi@infotsav.in","Coordinator","9461155105",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(2,"MUKUL SIKKA","mukul@infotsav.in","Coordinator","7470485414",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(3,"PRATYUSH RANJAN","pratyush@infotsav.in","Coordinator","9598319698",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(4,"SHUBHANKER SRIVASTAVA","shubhanker@infotsav.in","Coordinator","9454932137",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(5,"AVIHARSH SHUKLA","sidvaish4@gmail.com","Head App Developer","8765114937",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(6,"SIDDHARTH VAISH","sidvaish97@gmail.com","Head App Developer","9149386335",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(7,"HIMADRI SINGH","himsingh1612@gmail.com","App Developer","8449569368",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(8,"DEEPAK PALIWAL","deepakkpaliwal@gmail.com","App Developer","8769449558",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(9,"ABHISHEK CHAURASIA","abhi.chaurasia14@gmail.com","App Developer","9919098817",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(10,"ADITYA SHANKAR MISHRA","adityashankarmishra3@gmail.com","App Developer","9260970643",R.drawable.barry_allen));
+        mContactus_detailslist.add(new Contactus_details(11,"SHUBHAM BHAWSAR","bhawsarshubham741@gmail.com","App Developer","8878674076",R.drawable.barry_allen));
 
         adapter=new ContactusAdapter(getApplicationContext(), mContactus_detailslist);
         lvcontactus.setAdapter(adapter);
