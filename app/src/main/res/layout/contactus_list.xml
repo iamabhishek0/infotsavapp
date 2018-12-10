@@ -1,60 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#DCDCDC"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:elevation="16dp"
+    android:background="@drawable/shadow"
+    >
 
-    <ImageView
-        android:id="@+id/person_photo"
-        android:padding="16dp"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:src="@drawable/barry_allen" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="113dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/person_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/barry_allen"
+            />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/person_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Siddharth Vaish"
-            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
             android:padding="8dp"
+            android:text="Siddharth Vaish"
             android:textColor="#212121"
+            android:textSize="20sp"
             tools:layout_editor_absoluteY="16dp" />
 
         <TextView
             android:id="@+id/person_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
             android:paddingLeft="8dp"
-            android:textColor="#212121"
-
             android:text="sidvaish97@gmail.com"
-            />
-
-        <TextView
-            android:id="@+id/person_department"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:paddingLeft="8dp"
-            android:paddingTop="8dp"
             android:textColor="#212121"
+            android:textSize="16sp" />
 
-            android:text="App Development"
-            />
 
-        <Button
-            android:id="@+id/call_person_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Call" />
+            <TextView
+                android:id="@+id/person_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="App Development"
+                android:textColor="#212121"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/call_person_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:fontFamily="cursive"
+                android:padding="16dp"
+                android:src="@drawable/callbutton"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/call_button_1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:padding="16dp"
+                android:src="@drawable/callbutton"
+                android:background="#FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>
