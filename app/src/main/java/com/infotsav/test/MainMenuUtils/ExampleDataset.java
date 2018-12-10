@@ -75,10 +75,20 @@ public class ExampleDataset {
         item2.setPersonPictureResource(R.drawable.tina_caldwell);
         dataset.add(item2);
 
+        CardData item1a = new CardData();
+        item1a.setMainBackgroundResource(R.drawable.ultron60port);
+        item1a.setHeadBackgroundResource(R.drawable.ultron60land);
+        item1a.setHeadTitle("About Us");
+        item1a.setPersonMessage("Cur adelphis studere?");
+        item1a.setPersonName("Wallace Sutton");
+        item1a.setPersonPictureResource(R.drawable.wallace_sutton);
+        item1a.setListItems(prepareCommentsArray());
+        dataset.add(item1a);
+
         CardData item1 = new CardData();
         item1.setMainBackgroundResource(R.drawable.ultron60port);
         item1.setHeadBackgroundResource(R.drawable.ultron60land);
-        item1.setHeadTitle("About Us");
+        item1.setHeadTitle("Contact Us");
         item1.setPersonMessage("Cur adelphis studere?");
         item1.setPersonName("Wallace Sutton");
         item1.setPersonPictureResource(R.drawable.wallace_sutton);
