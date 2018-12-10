@@ -20,7 +20,7 @@ import com.infotsav.test.Main_Activities.ContactusActivity;
 import com.infotsav.test.Main_Activities.EventsActivity;
 import com.infotsav.test.R;
 import com.infotsav.test.Main_Activities.RegisterActivity;
-import com.infotsav.test.Main_Activities.SponsersActivity;
+import com.infotsav.test.Main_Activities.SponsorsActivity;
 import com.infotsav.test.Main_Activities.TreasurehuntActivity;
 import com.infotsav.test.Main_Activities.UpdatesActivity;
 import com.infotsav.test.Utils.Constants;
@@ -108,9 +108,9 @@ public class MainActivity extends Activity {
                         {
                             startActivity(new Intent(MainActivity.this, TreasurehuntActivity.class));
                         }
-                        else if(cardData.getHeadTitle().equals(Constants.Sponsers))
+                        else if(cardData.getHeadTitle().equals(Constants.Sponsors))
                         {
-                            startActivity(new Intent(MainActivity.this, SponsersActivity.class));
+                            startActivity(new Intent(MainActivity.this, SponsorsActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Contactus))
                         {
