@@ -8,8 +8,8 @@
 
     <!-- LEFT TITLE PART -->
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
         android:layout_weight="3"
         android:background="@color/bgTitleLeft"
         android:gravity="center_horizontal"
@@ -26,7 +26,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
-            android:textSize="26sp" />
+            android:textSize="26sp"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/title_time_label"
@@ -36,7 +37,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/title_date_label"
@@ -46,7 +48,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:visibility="gone"/>
 
 
     </RelativeLayout>
@@ -56,47 +59,52 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@color/bgTitleRight"
-        android:paddingBottom="20dp"
-        android:paddingEnd="20dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="20dp"
         android:paddingStart="15dp"
-        android:paddingTop="20dp">
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp">
 
         <ImageView
             android:id="@+id/title_from_to_dots"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_width="15dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/from_to_purple" />
+            android:src="@drawable/from_to_purple"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/title_from_address"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/title_from_to_dots"
-            android:layout_marginTop="-5dp"
+            android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/title_from_to_dots"
             android:layout_toRightOf="@+id/title_from_to_dots"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"
-            android:singleLine="true"
+            android:gravity="center"
+            android:lines="7"
+            android:maxLines="7"
+            android:singleLine="false"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/title_from_to_dots_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@id/title_from_address"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/title_from_to_dots"
             android:layout_toRightOf="@+id/title_from_to_dots"
-            android:src="@color/contentDividerLine" />
+            android:src="@color/contentDividerLine"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/title_to_address"
@@ -109,45 +117,47 @@
             android:fadingEdge="horizontal"
             android:singleLine="true"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="gone" />
 
 
         <TextView
             android:id="@+id/title_requests_count"
-            style="@style/TitleBadgeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:textSize="15dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentBottom="true" />
 
         <TextView
             style="@style/TitleBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:layout_above="@id/title_requests_count"
-            android:layout_alignLeft="@id/title_requests_count"
             android:layout_alignStart="@id/title_requests_count"
-            android:text="@string/requests_count_badge" />
+            android:layout_alignLeft="@id/title_requests_count"
+            android:text="TIME" />
 
         <TextView
             android:id="@+id/title_weight"
-            style="@style/TitleBadgeText"
+            android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="@string/weight_mock" />
+            android:layout_alignParentBottom="true"
+            android:text="@string/venue_mock" />
 
         <TextView
-            style="@style/TitleBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:layout_above="@id/title_weight"
-            android:layout_alignLeft="@id/title_weight"
             android:layout_alignStart="@id/title_weight"
-            android:text="@string/weight_badge" />
+            android:layout_alignLeft="@id/title_weight"
+            android:text="VENUE" />
 
         <TextView
             android:id="@+id/title_pledge"
@@ -155,16 +165,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
 
         <TextView
             style="@style/TitleBadgeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/title_pledge"
-            android:layout_alignLeft="@id/title_pledge"
             android:layout_alignStart="@id/title_pledge"
-            android:text="@string/pledge_badge" />
+            android:layout_alignLeft="@id/title_pledge"
+            android:text="@string/pledge_badge"
+            android:visibility="gone" />
 
     </RelativeLayout>
 </LinearLayout>
