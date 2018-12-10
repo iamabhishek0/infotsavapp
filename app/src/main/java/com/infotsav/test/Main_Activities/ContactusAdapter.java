@@ -47,6 +47,7 @@ public class ContactusAdapter extends BaseAdapter {
         ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
 
 
+
         person_name.setText(mContactus_detailslist.get(position).getName());
         person_email.setText(mContactus_detailslist.get(position).getEmail());
         person_department.setText(mContactus_detailslist.get(position).getDept());

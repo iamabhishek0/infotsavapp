@@ -42,5 +42,6 @@ public class ContactusActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Item clicked",Toast.LENGTH_LONG).show();
             }
         });
+
     }
 }
