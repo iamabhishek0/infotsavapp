@@ -26,7 +26,4 @@
         <activity android:name=".Main_Activities.TreasurehuntActivity"></activity>
         <activity android:name=".Main_Activities.AboutusActivity"></activity>
     </application>
-
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-
 </manifest>

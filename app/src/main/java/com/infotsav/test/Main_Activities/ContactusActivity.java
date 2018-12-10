@@ -17,8 +17,6 @@ public class ContactusActivity extends AppCompatActivity {
     private ListView lvcontactus;
     private ContactusAdapter adapter;
     private List<Contactus_details> mContactus_detailslist;
-    private static final int REQUEST_CALL =1;
-    private String phone_no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +42,6 @@ public class ContactusActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Item clicked",Toast.LENGTH_LONG).show();
             }
         });
+
     }
 }

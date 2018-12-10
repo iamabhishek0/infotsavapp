@@ -14,7 +14,6 @@ import java.util.List;
 public class ContactusAdapter extends BaseAdapter {
 
     private Context mContext;
-    private static String phone;
     private List<Contactus_details> mContactus_detailslist;
 
 
@@ -55,7 +54,6 @@ public class ContactusAdapter extends BaseAdapter {
         person_call.setText(mContactus_detailslist.get(position).getCall());
         person_image.setImageResource(mContactus_detailslist.get(position).getImage());
         view.setTag(mContactus_detailslist.get(position).getId());
-        phone=mContactus_detailslist.get(position).getCall();
         return view;
     }
 }
