@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "733433784878",
+    "firebase_url": "https://infotsavapp19.firebaseio.com",
+    "project_id": "infotsavapp19",
+    "storage_bucket": "infotsavapp19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733433784878:android:2b75369be041dcc1",
+        "android_client_info": {
+          "package_name": "com.infotsav.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733433784878-7ahmgijadr2celj0gggghs0sl2li7rtu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.infotsav.test",
+            "certificate_hash": "4041c99dfe73447d888196b0f64b5a6c6b4c065c"
+          }
+        },
+        {
+          "client_id": "733433784878-6j6mnurrnif9c96hs48mk2pperkmem8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8IR6yXMl5mipK4MrOQATp5aekLQDAVt0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733433784878-6j6mnurrnif9c96hs48mk2pperkmem8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

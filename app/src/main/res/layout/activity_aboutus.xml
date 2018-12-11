@@ -7,96 +7,118 @@
     tools:context=".Main_Activities.AboutusActivity">
 
 
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
 
 
         <TextView
             android:id="@+id/t1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="title"
             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="25sp"
-            android:textStyle="bold"
-            />
+
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/t2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="description"
-             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:text="description"
             />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="190dp"
-                android:layout_alignParentBottom="true"
-                >
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="190dp">
 
-                    android:onClick="fb"
-                    android:text="facebook"
-                    tools:layout_editor_absoluteX="120dp"
-                    tools:layout_editor_absoluteY="210dp"
-                    android:layout_alignParentBottom="true"
-                    />
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="instagram"
+            <ImageButton
+                android:id="@+id/searchImageButton"
 
-                    tools:layout_editor_absoluteX="120dp"
-                    tools:layout_editor_absoluteY="210dp"
-                    android:onClick="inst"
-                    android:layout_alignParentBottom="true"
-                    />
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="twitter"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
 
-                    tools:layout_editor_absoluteX="120dp"
-                    tools:layout_editor_absoluteY="210dp"
-                    android:onClick="twi"
-                    android:layout_alignParentBottom="true"
-                    />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="lin"
-                    android:text="linkedin"
-                    tools:layout_editor_absoluteX="120dp"
-                    tools:layout_editor_absoluteY="210dp"
-                    android:layout_alignParentBottom="true"/>
-            </LinearLayout>
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
 
 
-        </LinearLayout>
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="282dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/fb"
+                android:onClick="fb" />
+
+            <ImageButton
+                android:id="@+id/searchImageButton"
+
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="194dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/insta"
+                android:onClick="inst" />
+
+            <ImageButton
+                android:id="@+id/searchImageButton"
+
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="107dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/twitter"
+                android:onClick="twi" />
+
+            <ImageButton
+                android:id="@+id/searchImageButton"
+
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/linkedin"
+                android:onClick="lin" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="256dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:background="@drawable/web1"
+            android:onClick="web"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="211dp" />
 
 
+    </LinearLayout>
 
 
 

@@ -48,4 +48,8 @@ public class AboutusActivity extends AppCompatActivity {
         Intent lind=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFJQVA82Mmu9AAAAWeY_RSwb8Fp19sXO5Q1hBC7QsBI_XkGgZOz8Vj2ar3GgW8fk0nDKt5Ncdc_zps5pBucvskVq9oQO5cJveNcYUHSRWYLI2Cm27Mo_0jFdJ-lSYu3_xI410w=&originalReferer=https://infotsav.in/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Finfotsav-iiitm-9b9941174%2F"));
         startActivity(lind);
     }
+    public void web(View view){
+        Intent webs=new Intent(Intent.ACTION_VIEW,Uri.parse("https://infotsav.in/"));
+        startActivity(webs);
+    }
 }
