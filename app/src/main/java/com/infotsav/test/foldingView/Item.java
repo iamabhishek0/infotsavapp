@@ -19,13 +19,19 @@ public class Item {
     private String time_event;
     private String date;
     private String time;
+    private String event_description_long;
+    private String event_head_names;
+    private String event_organizers_name;
+    private String event_rules;
+    private String event_name;
+    private int head_event_image;
 
     private View.OnClickListener requestBtnClickListener;
 
     public Item() {
     }
 
-    public Item(String price, int event_image, String event_detail_short, String venue_event, String time_event, String date, String time) {
+    public Item(String price, int event_image, String event_detail_short, String venue_event, String time_event, String date, String time, String event_description_long,String event_head_names, String event_organizers_name, String event_rules,String event_name,int head_event_image) {
         this.price = price;
         this.event_image = event_image;
         this.event_detail_short = event_detail_short;
@@ -33,10 +39,32 @@ public class Item {
         this.time_event = time_event;
         this.date = date;
         this.time = time;
+        this.event_description_long=event_description_long;
+        this.event_head_names=event_head_names;
+        this.event_organizers_name=event_organizers_name;
+        this.event_rules=event_rules;
+        this.event_name=event_name;
+        this.head_event_image=head_event_image;
+    }
+
+    public int getHead_event_image() {
+        return head_event_image;
+    }
+
+    public void setHead_event_image(int head_event_image) {
+        this.head_event_image = head_event_image;
     }
 
     public String getPrice() {
         return price;
+    }
+
+    public String getEvent_name() {
+        return event_name;
+    }
+
+    public void setEvent_name(String event_name) {
+        this.event_name = event_name;
     }
 
     public void setPrice(String price) {
@@ -45,6 +73,22 @@ public class Item {
 
     public int getEvent_image() {
         return event_image;
+    }
+
+    public String getEvent_description_long() {
+        return event_description_long;
+    }
+
+    public String getEvent_head_names() {
+        return event_head_names;
+    }
+
+    public String getEvent_organizers_name() {
+        return event_organizers_name;
+    }
+
+    public String getEvent_rules() {
+        return event_rules;
     }
 
     public void setEvent_image(int event_image) {
@@ -81,6 +125,22 @@ public class Item {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public void setEvent_description_long(String event_description_long) {
+        this.event_description_long = event_description_long;
+    }
+
+    public void setEvent_head_names(String event_head_names) {
+        this.event_head_names = event_head_names;
+    }
+
+    public void setEvent_organizers_name(String event_organizers_name) {
+        this.event_organizers_name = event_organizers_name;
+    }
+
+    public void setEvent_rules(String event_rules) {
+        this.event_rules = event_rules;
     }
 
     public String getTime() {
@@ -136,11 +196,11 @@ public class Item {
      */
     public static ArrayList<Item> getTestingList() {
         ArrayList<Item> items = new ArrayList<>();
-        items.add(new Item("$14", R.drawable.ultron60port, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "E-Block", "3:30PM", "TODAY", "05:10 PM"));
-        items.add(new Item("$23", R.drawable.blackwidow60port, "W 36th St, NY, 10015", "B-Block", "10:00AM", "TODAY", "11:10 AM"));
-        items.add(new Item("$63", R.drawable.captainamerica60port, "W 36th St, NY, 10029", "A-Block", "5:00PM", "TODAY", "07:11 PM"));
-        items.add(new Item("$19", R.drawable.nickfurry60port, "12th Ave, NY, 10012", "C-Block", "2:30PM", "TODAY", "4:15 AM"));
-        items.add(new Item("$5", R.drawable.thor60port, "56th Ave, NY, 10041", "D-Block", "6:00AM", "TODAY", "06:15 PM"));
+        items.add(new Item("$14", R.drawable.barry_allen, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "E-Block", "3:30PM", "TODAY", "05:10 PM","Trove Trace is the simulation event of in form of the online treasure hunt contest. A series of hints would be provided on the facebook page and the participants would have to decipher them in order to win the hunt.","Siddharth Vaish","Siddharth Vaish","Rules to be announced","Trove Trace",R.drawable.head_image));
+        items.add(new Item("$23", R.drawable.barry_allen, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "B-Block", "10:00AM", "TODAY", "11:10 AM","Trove Trace is the simulation event of in form of the online treasure hunt contest. A series of hints would be provided on the facebook page and the participants would have to decipher them in order to win the hunt.2","Siddharth Vaish2","Siddharth Vaish2","Rules to be announced2","Trove Trace",R.drawable.head_image));
+        items.add(new Item("$63", R.drawable.barry_allen, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "A-Block", "5:00PM", "TODAY", "07:11 PM","Trove Trace is the simulation event of in form of the online treasure hunt contest. A series of hints would be provided on the facebook page and the participants would have to decipher them in order to win the hunt.3","Siddharth Vaish3","Siddharth Vaish3","Rules to be announced3","Trove Trace",R.drawable.head_image));
+        items.add(new Item("$19", R.drawable.barry_allen, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "C-Block", "2:30PM", "TODAY", "4:15 AM","Trove Trace is the simulation event of in form of the online treasure hunt contest. A series of hints would be provided on the facebook page and the participants would have to decipher them in order to win the hunt.4","Siddharth Vaish4","Siddharth Vaish4","Rules to be announced4","Trove Trace",R.drawable.head_image));
+        items.add(new Item("$5", R.drawable.barry_allen, "RoboWar is an open-source video game in which the player programs onscreen icon-like robots to battle each other with animation and sound effects", "D-Block", "6:00AM", "TODAY", "06:15 PM","Trove Trace is the simulation event of in form of the online treasure hunt contest. A series of hints would be provided on the facebook page and the participants would have to decipher them in order to win the hunt.5","Siddharth Vaish5","Siddharth Vaish5","Rules to be announced5","Trove Trace",R.drawable.head_image));
         return items;
 
     }

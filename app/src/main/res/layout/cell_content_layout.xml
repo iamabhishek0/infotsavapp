@@ -16,6 +16,7 @@
         android:paddingTop="7dp">
 
         <TextView
+            android:id="@+id/event_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/head_image"
+            android:id="@+id/head_event_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
@@ -62,9 +63,9 @@
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/head_image"
-            android:layout_alignLeft="@id/head_image"
-            android:layout_alignStart="@id/head_image"
+            android:layout_alignBottom="@id/head_event_image"
+            android:layout_alignLeft="@id/head_event_image"
+            android:layout_alignStart="@id/head_event_image"
             android:paddingBottom="10dp"
             android:paddingLeft="20dp"
             android:paddingStart="20dp"
@@ -88,9 +89,9 @@
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/head_image"
-            android:layout_alignEnd="@id/head_image"
-            android:layout_alignRight="@id/head_image"
+            android:layout_alignBottom="@id/head_event_image"
+            android:layout_alignEnd="@id/head_event_image"
+            android:layout_alignRight="@id/head_event_image"
             android:paddingBottom="10dp"
             android:paddingEnd="20dp"
             android:paddingRight="20dp"
@@ -112,7 +113,7 @@
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/head_image"
+            android:layout_alignBottom="@id/head_event_image"
             android:layout_centerHorizontal="true"
             android:paddingBottom="10dp"
             android:text="@string/pledge_mock"
@@ -167,7 +168,7 @@
                 android:visibility="gone"/>
 
             <TextView
-                android:id="@+id/content_name_view"
+                android:id="@+id/event_description_long"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/content_avatar"
@@ -183,9 +184,9 @@
                 android:id="@+id/content_rating_stars"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/content_name_view"
-                android:layout_alignStart="@id/content_name_view"
-                android:layout_below="@id/content_name_view"
+                android:layout_alignLeft="@id/event_description_long"
+                android:layout_alignStart="@id/event_description_long"
+                android:layout_below="@id/event_description_long"
                 android:src="@drawable/stars"
                 android:visibility="gone"/>
 
@@ -244,13 +245,13 @@
                     android:text="Event Heads" />
 
                 <TextView
-                    android:id="@+id/content_from_address_1"
+                    android:id="@+id/event_head_names"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/content_from_badge"
                     android:layout_alignStart="@id/content_from_badge"
                     android:layout_below="@id/content_from_badge"
-                    android:text="Siddharth Vaish"
+                    android:text="Siddharth Vaish\nParth Vaish"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -259,13 +260,14 @@
                     android:id="@+id/content_from_address_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_from_address_1"
-                    android:layout_alignStart="@id/content_from_address_1"
-                    android:layout_below="@id/content_from_address_1"
+                    android:layout_alignLeft="@id/event_head_names"
+                    android:layout_alignStart="@id/event_head_names"
+                    android:layout_below="@id/event_head_names"
                     android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
@@ -284,7 +286,7 @@
                     android:text="Event Organizers " />
 
                 <TextView
-                    android:id="@+id/content_to_address_1"
+                    android:id="@+id/event_organizers_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/content_to_badge"
@@ -299,13 +301,14 @@
                     android:id="@+id/content_to_address_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_to_address_1"
-                    android:layout_alignStart="@id/content_to_address_1"
-                    android:layout_below="@id/content_to_address_1"
+                    android:layout_alignLeft="@id/event_organizers_name"
+                    android:layout_alignStart="@id/event_organizers_name"
+                    android:layout_below="@id/event_organizers_name"
                     android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -350,7 +353,7 @@
                     android:text="PRIZE" />
 
                 <TextView
-                    android:id="@+id/content_delivery_time"
+                    android:id="@+id/event_rules"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/content_delivery_date_badge"
@@ -365,9 +368,9 @@
                     android:id="@+id/content_delivery_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_delivery_time"
-                    android:layout_alignStart="@id/content_delivery_time"
-                    android:layout_below="@id/content_delivery_time"
+                    android:layout_alignLeft="@id/event_rules"
+                    android:layout_alignStart="@id/event_rules"
+                    android:layout_below="@id/event_rules"
                     android:text="@string/delivery_date_mock"
                     android:textColor="@color/mainTextColor"
                     android:textSize="14sp"
