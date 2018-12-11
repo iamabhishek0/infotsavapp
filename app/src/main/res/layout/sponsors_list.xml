@@ -30,7 +30,7 @@
             android:layout_height="150dp"
             android:padding="16dp"
             android:layout_gravity="center"
-            tools:src="@drawable/barry_allen"
+            tools:src="@drawable/restaurant"
             />
     </LinearLayout>
 
@@ -48,7 +48,7 @@
             android:layout_gravity="center"
             android:fontFamily="cursive"
             android:padding="8dp"
-            android:text="Siddharth Vaish"
+            android:text="THE MAANSINGH"
             android:textColor="#212121"
             android:textSize="20sp"
             tools:layout_editor_absoluteY="16dp" />
@@ -60,42 +60,33 @@
             android:layout_gravity="center"
             android:fontFamily="cursive"
             android:paddingLeft="8dp"
-            android:text="sidvaish97@gmail.com"
+            android:text="Co-Sponsor"
             android:textColor="#212121"
             android:textSize="16sp" />
 
 
-            <TextView
-                android:id="@+id/person_department"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="cursive"
-                android:paddingLeft="8dp"
-                android:paddingTop="8dp"
-                android:text="App Development"
-                android:textColor="#212121"
-                android:textSize="16sp" />
+        <TextView
+            android:id="@+id/person_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="EDM Night"
+            android:textColor="#212121"
+            android:textSize="16sp" />
 
-            <Button
-                android:id="@+id/call_person_button"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="right"
-                android:fontFamily="cursive"
-                android:padding="16dp"
-                android:src="@drawable/callbutton"
-                android:visibility="gone" />
+        <Button
+            android:id="@+id/call_person_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:fontFamily="cursive"
+            android:padding="16dp"
+            android:src="@drawable/callbutton"
+            android:visibility="gone" />
 
-            <ImageButton
-                android:id="@+id/call_button_1"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_gravity="right"
-                android:padding="16dp"
-                android:src="@drawable/callbutton"
-                android:background="#FFFFFF"
-                android:foreground="?android:attr/selectableItemBackground"/>
 
     </LinearLayout>
 

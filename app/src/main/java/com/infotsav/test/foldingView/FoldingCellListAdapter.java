@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.infotsav.test.R;
@@ -44,11 +45,17 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
             viewHolder.price = cell.findViewById(R.id.title_price);
             viewHolder.time = cell.findViewById(R.id.title_time_label);
             viewHolder.date = cell.findViewById(R.id.title_date_label);
-            viewHolder.fromAddress = cell.findViewById(R.id.title_from_address);
-            viewHolder.toAddress = cell.findViewById(R.id.title_to_address);
-            viewHolder.requestsCount = cell.findViewById(R.id.title_requests_count);
-            viewHolder.pledgePrice = cell.findViewById(R.id.title_pledge);
+            viewHolder.event_detail_short = cell.findViewById(R.id.event_detail_short);
+            viewHolder.venue_event = cell.findViewById(R.id.venue_event);
+            viewHolder.time_event = cell.findViewById(R.id.time_event);
+            viewHolder.event_image = cell.findViewById(R.id.event_image);
             viewHolder.contentRequestBtn = cell.findViewById(R.id.content_request_btn);
+            viewHolder.event_description_long=cell.findViewById(R.id.event_description_long);
+            viewHolder.event_head_names=cell.findViewById(R.id.event_head_names);
+            viewHolder.event_organizers_name=cell.findViewById(R.id.event_organizers_name);
+            viewHolder.event_rules=cell.findViewById(R.id.event_rules);
+            viewHolder.event_name=cell.findViewById(R.id.event_name);
+            viewHolder.head_event_image=cell.findViewById(R.id.head_event_image);
             cell.setTag(viewHolder);
         } else {
             // for existing cell set valid valid state(without animation)
@@ -67,10 +74,16 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         viewHolder.price.setText(item.getPrice());
         viewHolder.time.setText(item.getTime());
         viewHolder.date.setText(item.getDate());
-        viewHolder.fromAddress.setText(item.getFromAddress());
-        viewHolder.toAddress.setText(item.getToAddress());
-        viewHolder.requestsCount.setText(String.valueOf(item.getRequestsCount()));
-        viewHolder.pledgePrice.setText(item.getPledgePrice());
+        viewHolder.event_detail_short.setText(item.getEvent_detail_short());
+        viewHolder.venue_event.setText(item.getVenue_event());
+        viewHolder.time_event.setText(item.getTime_event());
+        viewHolder.event_image.setImageResource(item.getEvent_image());
+        viewHolder.event_description_long.setText(item.getEvent_description_long());
+        viewHolder.event_head_names.setText(item.getEvent_head_names());
+        viewHolder.event_organizers_name.setText(item.getEvent_organizers_name());
+        viewHolder.event_rules.setText(item.getEvent_rules());
+        viewHolder.event_name.setText(item.getEvent_name());
+        viewHolder.head_event_image.setImageResource(item.getHead_event_image());
 
         // set custom btn handler for list item from that item
         if (item.getRequestBtnClickListener() != null) {
@@ -111,11 +124,18 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
     private static class ViewHolder {
         TextView price;
         TextView contentRequestBtn;
-        TextView pledgePrice;
-        TextView fromAddress;
-        TextView toAddress;
-        TextView requestsCount;
+        ImageView event_image;
+        TextView event_detail_short;
+        TextView venue_event;
+        TextView time_event;
         TextView date;
         TextView time;
+        TextView event_description_long;
+        TextView event_head_names;
+        TextView event_organizers_name;
+        TextView event_rules;
+        TextView event_name;
+        ImageView head_event_image;
+
     }
 }
