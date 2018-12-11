@@ -1,5 +1,10 @@
 package com.infotsav.test.Main_Activities;
 
+import android.content.Intent;
+import android.net.Uri;
+
+import static android.support.v4.content.ContextCompat.startActivity;
+
 public class Contactus_details {
     private int id;
     private String name;
@@ -35,6 +40,7 @@ public class Contactus_details {
 
     public String getCall() {
         return call;
+
     }
 
     public void setId(int id) {

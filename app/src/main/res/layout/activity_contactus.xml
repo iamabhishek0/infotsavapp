@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#F89102"
+    android:background="#C0C0C0"
     tools:context=".Main_Activities.ContactusActivity">
 
     <ListView
@@ -16,6 +16,6 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:divider="#C0C0C0"
-        android:dividerHeight="10dp"
+        android:dividerHeight="2dp"
         />
 </LinearLayout>
