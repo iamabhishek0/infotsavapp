@@ -1,12 +1,21 @@
 package com.infotsav.test.Main_Activities;
 
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.infotsav.test.R;
 
 import java.util.ArrayList;
@@ -16,14 +25,60 @@ public class ContactusActivity extends AppCompatActivity {
 
     private ListView lvcontactus;
     private ContactusAdapter adapter;
-    private List<Contactus_details> mContactus_detailslist;
+    private ArrayList<Contactus_details> mContactus_detailslist;
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("contactus");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus);
 
-        lvcontactus=(ListView)findViewById(R.id.listview_contactus);
+        mContactus_detailslist = new ArrayList<>();
+        databaseReference.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                Contactus_details contactus_details=(Contactus_details)dataSnapshot.getValue(Contactus_details.class);
+                mContactus_detailslist.add(contactus_details);
+                if(adapter!=null)
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                lvcontactus=(ListView)findViewById(R.id.listview_contactus);
+                adapter=new ContactusAdapter(getApplicationContext(), mContactus_detailslist);
+                lvcontactus.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        /*lvcontactus=(ListView)findViewById(R.id.listview_contactus);
         mContactus_detailslist =new ArrayList<>();
         mContactus_detailslist.add(new Contactus_details(1,"JUHI TIWARI","juhi@infotsav.in","Coordinator","9461155105",R.drawable.barry_allen));
         mContactus_detailslist.add(new Contactus_details(2,"MUKUL SIKKA","mukul@infotsav.in","Coordinator","7470485414",R.drawable.barry_allen));
@@ -45,7 +100,7 @@ public class ContactusActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(),"Item clicked",Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
     }
 }
