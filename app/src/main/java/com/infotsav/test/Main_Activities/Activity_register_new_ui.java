@@ -5,12 +5,11 @@ import android.os.Bundle;
 
 import com.infotsav.test.R;
 
-public class TreasurehuntActivity extends AppCompatActivity {
+public class Activity_register_new_ui extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_treasurehunt);
-
+        setContentView(R.layout.activity_register_new_ui);
     }
 }
