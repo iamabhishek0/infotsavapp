@@ -6,14 +6,17 @@ import android.net.Uri;
 import static android.support.v4.content.ContextCompat.startActivity;
 
 public class Contactus_details {
-    private int id;
+    private String id;
     private String name;
     private String email;
     private String dept;
     private String call;
-    private int image;
+    private String image;
 
-    public Contactus_details(int id, String name, String email, String dept, String call,int image) {
+    public Contactus_details() {
+    }
+
+    public Contactus_details(String id, String name, String email, String dept, String call,String image) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -22,7 +25,7 @@ public class Contactus_details {
         this.image=image;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -43,7 +46,7 @@ public class Contactus_details {
 
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -63,11 +66,9 @@ public class Contactus_details {
         this.call = call;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
-        this.image = image;
-    }
 }
+
