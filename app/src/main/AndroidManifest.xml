@@ -25,7 +25,10 @@
         <activity android:name=".Main_Activities.ContactusActivity" />
         <activity android:name=".Main_Activities.SponsorsActivity" />
         <activity android:name=".foldingView.FoldingActivity" />
-        <activity android:name=".Main_Activities.TreasurehuntActivity"></activity>
-        <activity android:name=".Main_Activities.AboutusActivity"></activity>
+        <activity android:name=".Main_Activities.TreasurehuntActivity" />
+        <activity android:name=".Main_Activities.AboutusActivity" />
+        <activity android:name=".Main_Activities.Activity_login_new_ui" />
+        <activity android:name=".Main_Activities.Activity_register_new_ui"></activity>
     </application>
+
 </manifest>
