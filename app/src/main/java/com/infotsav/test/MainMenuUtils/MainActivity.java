@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.google.firebase.database.FirebaseDatabase;
 import com.infotsav.test.Main_Activities.AboutusActivity;
+import com.infotsav.test.Main_Activities.Activity_login_new_ui;
 import com.infotsav.test.Main_Activities.ContactusActivity;
 import com.infotsav.test.Main_Activities.EventsActivity;
 import com.infotsav.test.R;
@@ -108,7 +109,7 @@ public class MainActivity extends Activity {
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Treasurehunt))
                         {
-                            startActivity(new Intent(MainActivity.this, TreasurehuntActivity.class));
+                            startActivity(new Intent(MainActivity.this, Activity_login_new_ui.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Sponsors))
                         {
