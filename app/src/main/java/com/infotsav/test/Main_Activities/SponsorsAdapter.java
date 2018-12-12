@@ -43,7 +43,7 @@ public class SponsorsAdapter extends BaseAdapter {
         TextView person_name=(TextView)view.findViewById(R.id.person_name);
         TextView person_email=(TextView)view.findViewById(R.id.person_email);
         TextView person_department=(TextView)view.findViewById(R.id.person_department);
-        TextView person_call=(TextView)view.findViewById(R.id.call_person_button);
+       // TextView person_call=(TextView)view.findViewById(R.id.call_person_button);
         ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
 
 

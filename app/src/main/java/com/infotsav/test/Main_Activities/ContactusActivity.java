@@ -4,10 +4,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -26,6 +28,7 @@ public class ContactusActivity extends AppCompatActivity {
     private ListView lvcontactus;
     private ContactusAdapter adapter;
     private ArrayList<Contactus_details> mContactus_detailslist;
+    private ProgressBar progressBar;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("contactus");
 
     @Override
@@ -34,13 +37,16 @@ public class ContactusActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contactus);
 
         mContactus_detailslist = new ArrayList<>();
+        progressBar = findViewById(R.id.progress_bar);
+        progressBar.setVisibility(View.VISIBLE);
+        lvcontactus=(ListView)findViewById(R.id.listview_contactus);
+       
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                Contactus_details contactus_details=(Contactus_details)dataSnapshot.getValue(Contactus_details.class);
+                Contactus_details contactus_details=dataSnapshot.getValue(Contactus_details.class);
                 mContactus_detailslist.add(contactus_details);
-                if(adapter!=null)
-                adapter.notifyDataSetChanged();
+               // Log.e("contact_us", contactus_details.getEmail());
             }
 
             @Override
@@ -67,7 +73,7 @@ public class ContactusActivity extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                lvcontactus=(ListView)findViewById(R.id.listview_contactus);
+                progressBar.setVisibility(View.GONE);
                 adapter=new ContactusAdapter(getApplicationContext(), mContactus_detailslist);
                 lvcontactus.setAdapter(adapter);
             }

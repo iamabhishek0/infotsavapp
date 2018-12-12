@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.infotsav.test.Main_Activities.AboutusActivity;
 import com.infotsav.test.Main_Activities.ContactusActivity;
 import com.infotsav.test.Main_Activities.EventsActivity;
@@ -37,7 +38,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+    
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         setContentView(R.layout.activity_main);
 
         // Create adapter for pager
