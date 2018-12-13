@@ -11,25 +11,25 @@ import com.infotsav.test.R;
 
 import java.util.List;
 
-public class SponsorsAdapter extends BaseAdapter {
+public class UpdatesAdapter extends BaseAdapter {
 
     private Context mContext;
-    private List<Sponsors_details> mSponsors_detailslist;
+    private List<Updates_details> mUpdates_detailslist;
 
 
-    public SponsorsAdapter(Context mContext, List<Sponsors_details> mSponsors_detailslist) {
+    public UpdatesAdapter(Context mContext, List<Updates_details> mUpdates_detailslist) {
         this.mContext = mContext;
-        this.mSponsors_detailslist = mSponsors_detailslist;
+        this.mUpdates_detailslist = mUpdates_detailslist;
     }
 
     @Override
     public int getCount() {
-        return mSponsors_detailslist.size();
+        return mUpdates_detailslist.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return mSponsors_detailslist.get(position);
+        return mUpdates_detailslist.get(position);
     }
 
     @Override
@@ -39,20 +39,20 @@ public class SponsorsAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = View.inflate(mContext,R.layout.sponsors_list,null);
+        View view = View.inflate(mContext,R.layout.updates_list,null);
         TextView person_name=(TextView)view.findViewById(R.id.person_name);
         TextView person_email=(TextView)view.findViewById(R.id.person_email);
         TextView person_department=(TextView)view.findViewById(R.id.person_department);
-       // TextView person_call=(TextView)view.findViewById(R.id.call_person_button);
+        // TextView person_call=(TextView)view.findViewById(R.id.call_person_button);
         ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
 
 
 
-        person_name.setText(mSponsors_detailslist.get(position).getName());
-        person_email.setText(mSponsors_detailslist.get(position).getSponsorship1());
-        person_department.setText(mSponsors_detailslist.get(position).getSponsorship2());
-        person_image.setImageResource(mSponsors_detailslist.get(position).getImage());
-        view.setTag(mSponsors_detailslist.get(position).getId());
+        person_name.setText(mUpdates_detailslist.get(position).getHeading());
+        person_email.setText(mUpdates_detailslist.get(position).getDate_time());
+        person_department.setText(mUpdates_detailslist.get(position).getData());
+        person_image.setImageResource(mUpdates_detailslist.get(position).getImage());
+        view.setTag(mUpdates_detailslist.get(position).getId());
         return view;
     }
 }
