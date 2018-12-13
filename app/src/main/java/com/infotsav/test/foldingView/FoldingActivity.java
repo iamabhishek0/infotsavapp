@@ -22,12 +22,21 @@ import com.ramotion.foldingcell.FoldingCell;
 
 import java.util.ArrayList;
 
+import static com.infotsav.test.Utils.Constants.all;
+import static com.infotsav.test.Utils.Constants.gamiacs;
+import static com.infotsav.test.Utils.Constants.managerial;
+import static com.infotsav.test.Utils.Constants.online;
+import static com.infotsav.test.Utils.Constants.onsite;
+import static com.infotsav.test.Utils.Constants.robotics;
+import static com.infotsav.test.Utils.Constants.school;
+import static com.infotsav.test.Utils.Constants.technical;
+
 /**
  * Example of using Folding Cell with ListView and ListAdapter
  */
 public class FoldingActivity extends AppCompatActivity {
 
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("event_details").child("all");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("event_details");
     private FoldingCellListAdapter adapter;
     ListView theListView;
 
@@ -37,6 +46,8 @@ public class FoldingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_folding);
+        Bundle bundle = getIntent().getExtras();
+        String child = bundle.getString("message");
 
         // get our list view
         theListView = findViewById(R.id.mainListView);
@@ -64,6 +75,23 @@ public class FoldingActivity extends AppCompatActivity {
         // set on click event listener to list view
 
         mItem=new ArrayList<>();
+        if(child.equalsIgnoreCase(all))
+            databaseReference=databaseReference.child(child);
+        else if(child.equalsIgnoreCase(online))
+            databaseReference=databaseReference.child(child);
+        else if (child.equalsIgnoreCase(onsite))
+            databaseReference=databaseReference.child(child);
+        else if (child.equalsIgnoreCase(managerial))
+            databaseReference=databaseReference.child(child);
+        else if (child.equalsIgnoreCase(technical))
+            databaseReference=databaseReference.child(child);
+        else if (child.equalsIgnoreCase(school))
+            databaseReference=databaseReference.child(child);
+        else if (child.equalsIgnoreCase(gamiacs))
+            databaseReference=databaseReference.child(child);
+        else if (child.equalsIgnoreCase(robotics))
+            databaseReference=databaseReference.child(child);
+        else {}
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {

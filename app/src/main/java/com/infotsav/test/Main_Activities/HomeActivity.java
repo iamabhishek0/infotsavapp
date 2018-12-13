@@ -11,6 +11,7 @@ import com.infotsav.test.R;
 import com.infotsav.test.foldingView.FoldingActivity;
 
 public class HomeActivity extends AppCompatActivity {
+    String str;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +21,52 @@ public class HomeActivity extends AppCompatActivity {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
-    public void launchFoldingActivity(View view) {
-
+    public void launchFoldingActivityAll(View view) {
+        str = "all";
         Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivityGamiacs(View view) {
+        str = "gamiacs";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivityManagerial(View view) {
+        str = "managerial";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivityOnline(View view) {
+        str = "online";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivityOnsite(View view) {
+        str = "onsite";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivityRobotics(View view) {
+        str = "robotics";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivityTechnical(View view) {
+        str = "technical";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
+        startActivity(intent);
+    }
+    public void launchFoldingActivitySchool(View view) {
+        str = "school";
+        Intent intent = new Intent(this, FoldingActivity.class);
+        intent.putExtra("message",str);
         startActivity(intent);
     }
 }

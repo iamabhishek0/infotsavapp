@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
                         
                         if(cardData.getHeadTitle().equals(Constants.Home))
                         {
-                            startActivity(new Intent(MainActivity.this, FoldingActivity.class));
+                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Events))
                         {
