@@ -20,7 +20,7 @@ public class ExampleDataset {
         item7.setHeadBackgroundResource(R.drawable.blackwidow60land);
         item7.setHeadTitle("Home");
         item7.setPersonMessage("This is the home card");
-        item7.setPersonName("Marjorie Ellis");
+        item7.setPersonName("The Venom Trailer used music from the Infinity War Trailer");
         item7.setPersonPictureResource(R.drawable.marjorie_ellis);
         item7.setListItems(prepareCommentsArray());
         dataset.add(item7);
@@ -29,8 +29,8 @@ public class ExampleDataset {
         item6.setMainBackgroundResource(R.drawable.ironman60);
         item6.setHeadBackgroundResource(R.drawable.ironman60land);
         item6.setHeadTitle("Events");
-        item6.setPersonMessage("Usus de bassus buxum, desiderium index!");
-        item6.setPersonName("Marjorie Ellis");
+        item6.setPersonMessage("Captain America’s costume in Infinity War is based on two separate looks from the comics");
+        item6.setPersonName("Captain America’s costume in Infinity War is based on two separate looks from the comics");
         item6.setPersonPictureResource(R.drawable.marjorie_ellis);
         item6.setListItems(prepareCommentsArray());
         dataset.add(item6);
@@ -39,8 +39,8 @@ public class ExampleDataset {
         item5.setMainBackgroundResource(R.drawable.spidey60port);
         item5.setHeadBackgroundResource(R.drawable.spidey60land);
         item5.setHeadTitle("Register");
-        item5.setPersonMessage("Usus de bassus buxum, desiderium index!");
-        item5.setPersonName("Marjorie Ellis");
+        item5.setPersonMessage("Marvel may be developing that Black Widow movie after all");
+        item5.setPersonName("Marvel may be developing that Black Widow movie after all");
         item5.setPersonPictureResource(R.drawable.marjorie_ellis);
         item5.setListItems(prepareCommentsArray());
         dataset.add(item5);
@@ -49,8 +49,8 @@ public class ExampleDataset {
         item4.setMainBackgroundResource(R.drawable.nickfurry60port);
         item4.setHeadBackgroundResource(R.drawable.nickfurry60land);
         item4.setHeadTitle("Updates");
-        item4.setPersonMessage("Solems manducare, tanquam neuter verpa.");
-        item4.setPersonName("Mattew Jordan");
+        item4.setPersonMessage("Tony Stark is still nursing an injured left arm");
+        item4.setPersonName("Tony Stark is still nursing an injured left arm");
         item4.setPersonPictureResource(R.drawable.mattew_jordan);
         item4.setListItems(prepareCommentsArray());
         dataset.add(item4);
@@ -59,8 +59,8 @@ public class ExampleDataset {
         item3.setMainBackgroundResource(R.drawable.thor60port);
         item3.setHeadBackgroundResource(R.drawable.thor60land);
         item3.setHeadTitle("Treasure Hunt");
-        item3.setPersonMessage("Magnum lacteas ducunt ad orexis.");
-        item3.setPersonName("Ross Rodriguez");
+        item3.setPersonMessage("In the comic books, Thanos erases half of the life in the universe");
+        item3.setPersonName("In the comic books, Thanos erases half of the life in the universe");
         item3.setPersonPictureResource(R.drawable.ross_rodriguez);
         item3.setListItems(prepareCommentsArray());
         dataset.add(item3);
@@ -69,8 +69,8 @@ public class ExampleDataset {
         item2.setMainBackgroundResource(R.drawable.captainamerica60port);
         item2.setHeadBackgroundResource(R.drawable.captainamerica60);
         item2.setHeadTitle("Sponsors");
-        item2.setPersonName("Tina Caldwell");
-        item2.setPersonMessage("Nunquam perdere clabulare.");
+        item2.setPersonName("The final battle in Black Panther is more symbolic than you think");
+        item2.setPersonMessage("The final battle in Black Panther is more symbolic than you think");
         item2.setListItems(prepareCommentsArray());
         item2.setPersonPictureResource(R.drawable.tina_caldwell);
         dataset.add(item2);
@@ -80,7 +80,7 @@ public class ExampleDataset {
         item1a.setHeadBackgroundResource(R.drawable.ultron60land);
         item1a.setHeadTitle("About Us");
         item1a.setPersonMessage("Cur adelphis studere?");
-        item1a.setPersonName("Wallace Sutton");
+        item1a.setPersonName("The characters in Black Panther are speaking a real African language");
         item1a.setPersonPictureResource(R.drawable.wallace_sutton);
         item1a.setListItems(prepareCommentsArray());
         dataset.add(item1a);
@@ -90,7 +90,7 @@ public class ExampleDataset {
         item1.setHeadBackgroundResource(R.drawable.ultron60land);
         item1.setHeadTitle("Contact Us");
         item1.setPersonMessage("Cur adelphis studere?");
-        item1.setPersonName("Wallace Sutton");
+        item1.setPersonName("There is a copy of the Guardians of the Galaxy Vol. 2 Script written specifically for Vin Diesel");
         item1.setPersonPictureResource(R.drawable.wallace_sutton);
         item1.setListItems(prepareCommentsArray());
         dataset.add(item1);
