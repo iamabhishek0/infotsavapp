@@ -6,7 +6,7 @@
     android:background="@drawable/layout_bg"
     android:translationZ="4dp"
     android:outlineAmbientShadowColor="#000000"
-    >
+    android:visibility="gone">
 
     <!-- content header line android:background="@color/bgContentTop"-->
     <RelativeLayout
