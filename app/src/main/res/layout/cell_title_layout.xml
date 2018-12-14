@@ -92,20 +92,21 @@
 
         <TextView
             android:id="@+id/event_detail_short"
+            android:fontFamily="@font/captianamericafont"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/title_from_to_dots"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="25dp"
             android:layout_toEndOf="@+id/title_from_to_dots"
             android:layout_toRightOf="@+id/title_from_to_dots"
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"
             android:gravity="center"
-            android:lines="7"
-            android:maxLines="7"
+            android:lines="2"
+            android:maxLines="2"
             android:singleLine="false"
             android:textColor="@android:color/black"
-            android:textSize="14sp" />
+            android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/title_from_to_dots_divider"
