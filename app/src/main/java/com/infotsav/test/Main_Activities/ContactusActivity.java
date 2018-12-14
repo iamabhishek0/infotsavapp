@@ -48,12 +48,12 @@ public class ContactusActivity extends AppCompatActivity {
         mContactus_detailslist.add(new Contactus_details("11","SHUBHAM BHAWSAR","bhawsarshubham741@gmail.com","App Developer","8878674076","https://firebasestorage.googleapis.com/v0/b/infotsavapp19.appspot.com/o/aaron_bradley.png?alt=media&token=b3ecaad8-fda1-45d2-9d42-059eecad3834"));
         adapter=new ContactusAdapter(getApplicationContext(), mContactus_detailslist);
         lvcontactus.setAdapter(adapter);
-        lvcontactus.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*lvcontactus.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(),"Item clicked",Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
     }
 }

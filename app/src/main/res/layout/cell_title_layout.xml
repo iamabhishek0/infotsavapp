@@ -140,6 +140,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
+            android:fontFamily="@font/captianamericafont"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true" />
@@ -148,6 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:fontFamily="@font/captianamericafont"
             android:layout_above="@id/time_event"
             android:layout_alignStart="@id/time_event"
             android:layout_alignLeft="@id/time_event"
@@ -158,20 +160,21 @@
             android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/captianamericafont"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:text="@string/venue_mock" />
+            android:text="@string/venue_mock"
+            />
 
         <TextView
+            android:id="@+id/venue_event_badage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/venue_event"
+            android:fontFamily="@font/captianamericafont"
             android:layout_alignStart="@id/venue_event"
             android:layout_alignLeft="@id/venue_event"
-            android:layout_marginStart="-14dp"
-            android:layout_marginLeft="-14dp"
-            android:layout_marginBottom="1dp"
             android:text="VENUE"
             android:textSize="20dp" />
 
