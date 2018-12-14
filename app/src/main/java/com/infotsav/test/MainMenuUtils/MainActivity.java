@@ -17,17 +17,17 @@ import android.widget.TextView;
 
 import com.google.firebase.database.FirebaseDatabase;
 import com.infotsav.test.Main_Activities.AboutusActivity;
-import com.infotsav.test.Main_Activities.Activity_login_new_ui;
+import com.infotsav.test.Main_Activities.LoginActivity;
 import com.infotsav.test.Main_Activities.ContactusActivity;
 import com.infotsav.test.Main_Activities.EventsActivity;
 import com.infotsav.test.Main_Activities.HomeActivity;
+import com.infotsav.test.Main_Activities.Register_Activity;
+import com.infotsav.test.Main_Activities.TreasurehuntActivity;
 import com.infotsav.test.R;
 import com.infotsav.test.Main_Activities.RegisterActivity;
 import com.infotsav.test.Main_Activities.SponsorsActivity;
-import com.infotsav.test.Main_Activities.TreasurehuntActivity;
 import com.infotsav.test.Main_Activities.UpdatesActivity;
 import com.infotsav.test.Utils.Constants;
-import com.infotsav.test.foldingView.FoldingActivity;
 import com.ramotion.expandingcollection.ECBackgroundSwitcherView;
 import com.ramotion.expandingcollection.ECCardData;
 import com.ramotion.expandingcollection.ECPagerView;
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Register))
                         {
-                            startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+                            startActivity(new Intent(MainActivity.this, Register_Activity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Updates))
                         {
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Treasurehunt))
                         {
-                            startActivity(new Intent(MainActivity.this, Activity_login_new_ui.class));
+                            startActivity(new Intent(MainActivity.this, TreasurehuntActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Sponsors))
                         {

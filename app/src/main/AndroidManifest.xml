@@ -27,8 +27,8 @@
         <activity android:name=".foldingView.FoldingActivity" />
         <activity android:name=".Main_Activities.TreasurehuntActivity" />
         <activity android:name=".Main_Activities.AboutusActivity" />
-        <activity android:name=".Main_Activities.Activity_login_new_ui" />
-        <activity android:name=".Main_Activities.Activity_register_new_ui"></activity>
+        <activity android:name=".Main_Activities.LoginActivity" />
+        <activity android:name=".Main_Activities.Register_Activity"></activity>
     </application>
 
 </manifest>
