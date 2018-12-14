@@ -39,7 +39,7 @@ public class Sponsors_details {
         this.name = name;
     }
 
-    public void setSponsorship1(String sponsorship2) {
+    public void setSponsorship1(String sponsorship1) {
         this.sponsorship1 = sponsorship1;
     }
 
