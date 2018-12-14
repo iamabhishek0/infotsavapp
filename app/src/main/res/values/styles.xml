@@ -15,10 +15,11 @@
 
     <style name="cardHeadTitle">
         <item name="android:textColor">#ffffffff</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/deadpoolfont</item>
         <item name="android:shadowColor">#000000</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
+        <item name="android:shadowDx">10</item>
+        <item name="android:shadowDy">10</item>
         <item name="android:shadowRadius">1</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:typeface">sans</item>

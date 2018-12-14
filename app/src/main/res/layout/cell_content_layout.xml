@@ -3,13 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@drawable/layout_bg"
+    android:translationZ="4dp"
+    android:outlineAmbientShadowColor="#000000"
     android:visibility="gone">
 
-    <!-- content header line -->
+    <!-- content header line android:background="@color/bgContentTop"-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bgContentTop"
         android:paddingBottom="7dp"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
@@ -21,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Trove Trace"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -132,11 +134,11 @@
 
     </RelativeLayout>
 
-    <!-- content body layout -->
+    <!-- content body layout android:background="@color/bgContent"-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bgContent"
+
         android:orientation="vertical"
         android:paddingBottom="6dp"
         android:paddingLeft="20dp"
@@ -419,13 +421,13 @@
 
         </LinearLayout>
 
-        <!-- request button -->
+        <!-- request button android:background="@color/btnRequest"-->
         <TextView
             android:id="@+id/content_request_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/btnRequest"
+            android:background="@drawable/layout_bg_button"
             android:padding="10dp"
             android:text="REGISTER"
             android:textAlignment="center"
