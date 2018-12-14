@@ -53,15 +53,6 @@ public class ContactusAdapter extends BaseAdapter {
 
         TextView person_department=(TextView)view.findViewById(R.id.person_department);
 
-        AssetManager assetManager = mContext.getAssets();
-
-        final Typeface tvFont = Typeface.createFromAsset(assetManager,  "fonts/Delius-Regular.ttf");
-        person_name.setTypeface(tvFont);
-        person_department.setTypeface(tvFont);
-        person_email.setTypeface(tvFont);
-
-        person_name.setTextColor(Color.BLACK);
-
         ImageView person_call=(ImageView) view.findViewById(R.id.call_person_button);
         ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
 
