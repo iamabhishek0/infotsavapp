@@ -20,6 +20,7 @@ import com.infotsav.test.Main_Activities.AboutusActivity;
 import com.infotsav.test.Main_Activities.Activity_login_new_ui;
 import com.infotsav.test.Main_Activities.ContactusActivity;
 import com.infotsav.test.Main_Activities.EventsActivity;
+import com.infotsav.test.Main_Activities.HomeActivity;
 import com.infotsav.test.R;
 import com.infotsav.test.Main_Activities.RegisterActivity;
 import com.infotsav.test.Main_Activities.SponsorsActivity;
@@ -93,7 +94,7 @@ public class MainActivity extends Activity {
                         
                         if(cardData.getHeadTitle().equals(Constants.Home))
                         {
-                            startActivity(new Intent(MainActivity.this, FoldingActivity.class));
+                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Events))
                         {
