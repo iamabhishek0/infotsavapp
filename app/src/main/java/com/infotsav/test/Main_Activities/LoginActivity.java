@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.infotsav.test.R;
 
-public class Activity_login_new_ui extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     EditText login_email,login_password;
     TextView txt_Register;
@@ -19,7 +19,7 @@ public class Activity_login_new_ui extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_new_ui);
+        setContentView(R.layout.activity_login);
 
 
         login_email = (EditText) findViewById(R.id.login_email);
@@ -31,8 +31,8 @@ public class Activity_login_new_ui extends AppCompatActivity {
         txt_Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Activity_login_new_ui.this,
-                        Activity_register_new_ui.class);
+                Intent i = new Intent(LoginActivity.this,
+                        Register_Activity.class);
                 startActivity(i);
             }
         });
