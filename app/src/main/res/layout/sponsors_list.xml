@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
     android:orientation="horizontal"
-    android:elevation="16dp"
-    android:background="@drawable/shadow"
-    >
+    android:translationZ="5dp"
+    android:outlineAmbientShadowColor="@color/black_overlay">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="121dp"
-        android:layout_marginLeft="121dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginRight="113dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/person_photo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:padding="16dp"
-            android:layout_gravity="center"
-            tools:src="@drawable/restaurant"
-            />
-    </LinearLayout>
-
-    <LinearLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="130dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/image" />
 
         <TextView
             android:id="@+id/person_name"
@@ -51,7 +35,7 @@
             android:text="THE MAANSINGH"
             android:textColor="#212121"
             android:textSize="20sp"
-            tools:layout_editor_absoluteY="16dp" />
+            />
 
         <TextView
             android:id="@+id/person_email"
@@ -77,17 +61,6 @@
             android:textColor="#212121"
             android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/call_person_button"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="right"
-            android:fontFamily="cursive"
-            android:padding="16dp"
-            android:src="@drawable/callbutton"
-            android:visibility="gone" />
+    </android.support.v7.widget.CardView>
 
-
-    </LinearLayout>
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
