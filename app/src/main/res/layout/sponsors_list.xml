@@ -1,66 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:paddingTop="10dp"
-    android:paddingRight="10dp"
-    android:paddingLeft="10dp"
-    android:paddingBottom="10dp"
-    android:orientation="horizontal"
-    android:translationZ="5dp"
-    android:outlineAmbientShadowColor="@color/black_overlay">
+    android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardCornerRadius="10dp">
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="50dp"
+        android:layout_margin="10dp">
 
-        <ImageView
-            android:id="@+id/person_photo"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/image" />
-
-        <TextView
-            android:id="@+id/person_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:padding="8dp"
-            android:text="THE MAANSINGH"
-            android:textColor="#212121"
-            android:textSize="20sp"
-            />
-
-        <TextView
-            android:id="@+id/person_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:paddingLeft="8dp"
-            android:text="Co-Sponsor"
-            android:textColor="#212121"
-            android:textSize="16sp" />
+            android:orientation="vertical">
 
 
-        <TextView
-            android:id="@+id/person_department"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:paddingLeft="8dp"
-            android:paddingTop="8dp"
-            android:text="EDM Night"
-            android:textColor="#212121"
-            android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/person_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/captianmarvelfont"
+                    android:padding="2dp"
+                    android:text="THE MAANSINGH"
+                    android:textColor="#212121"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/person_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/captianmarvelfont"
+                    android:padding="2dp"
+                    android:text="Co-Sponsor"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/person_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/captianmarvelfont"
+                    android:padding="2dp"
+                    android:text="EDM Night"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
