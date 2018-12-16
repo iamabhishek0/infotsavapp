@@ -1,57 +1,62 @@
 package com.infotsav.test.Main_Activities;
 
 public class Sponsors_details {
-    private int id;
-    private String name;
-    private String sponsorship1;
-    private String sponsorship2;
-    private int image;
+    private String id;
+    private String sponsor_name;
+    private String sponsor_level;
+    private String sponsor_image;
+    private String sponsor_dept;
 
-    public Sponsors_details(int id, String name, String sponsorship1, String sponsorship2, int image) {
-        this.id = id;
-        this.name = name;
-        this.sponsorship1 = sponsorship1;
-        this.sponsorship2 = sponsorship2;
-        this.image=image;
+    public Sponsors_details() {
     }
 
-    public int getId() {
+    public Sponsors_details(String id, String sponsor_name, String sponsor_level,  String sponsor_dept,String sponsor_image) {
+        this.id = id;
+        this.sponsor_name = sponsor_name;
+        this.sponsor_level = sponsor_level;
+        this.sponsor_image = sponsor_image;
+        this.sponsor_dept = sponsor_dept;
+    }
+
+
+    public String getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getSponsor_name() {
+        return sponsor_name;
     }
 
-    public String getSponsorship1() {
-        return sponsorship1;
+    public String getSponsor_level() {
+        return sponsor_level;
     }
 
-    public String getSponsorship2() {
-        return sponsorship2;
+    public String getSponsor_image() {
+        return sponsor_image;
     }
 
-    public void setId(int id) {
+    public String getSponsor_dept() {
+        return sponsor_dept;
+    }
+
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSponsor_name(String sponsor_name) {
+        this.sponsor_name = sponsor_name;
     }
 
-    public void setSponsorship1(String sponsorship1) {
-        this.sponsorship1 = sponsorship1;
+    public void setSponsor_level(String sponsor_level) {
+        this.sponsor_level = sponsor_level;
     }
 
-    public void setSponsorship2(String sponsorship2) {
-        this.sponsorship2 = sponsorship2;
+    public void setSponsor_image(String sponsor_image) {
+        this.sponsor_image = sponsor_image;
     }
 
-    public int getImage() {
-        return image;
+    public void setSponsor_dept(String sponsor_dept) {
+        this.sponsor_dept = sponsor_dept;
     }
 
-    public void setImage(int image) {
-        this.image = image;
-    }
 }

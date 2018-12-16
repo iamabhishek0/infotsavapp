@@ -1,55 +1,60 @@
 package com.infotsav.test.Main_Activities;
 
 public class Updates_details {
-    private int id;
-    private String heading;
-    private String date_time;
-    private String data;
-    private int image;
+    private String id;
+    private String announcement_title;
+    private String announcement_datetime;
+    private String announcement_desc;
+    private String announcement_image;
 
-    public Updates_details(int id, String heading, String date_time, String data, int image) {
+    public Updates_details(String id, String announcement_title, String announcement_datetime, String announcement_desc, String announcement_image) {
         this.id = id;
-        this.heading = heading;
-        this.date_time = date_time;
-        this.data = data;
-        this.image=image;
+        this.announcement_title = announcement_title;
+        this.announcement_datetime = announcement_datetime;
+        this.announcement_desc = announcement_desc;
+        this.announcement_image = announcement_image;
     }
 
-    public int getId() {
+    public Updates_details() {
+    }
+
+    public String getId() {
         return id;
     }
 
-    public String getHeading() {
-        return heading;
+    public String getAnnouncement_title() {
+        return announcement_title;
     }
 
-    public String getDate_time() {
-        return date_time;
+    public String getAnnouncement_datetime() {
+        return announcement_datetime;
     }
 
-    public String getData() { return data; }
+    public String getAnnouncement_desc() {
+        return announcement_desc;
+    }
 
-    public void setId(int id) {
+    public String getAnnouncement_image() {
+        return announcement_image;
+    }
+
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setHeading(String heading) {
-        this.heading = heading;
+    public void setAnnouncement_title(String announcement_title) {
+        this.announcement_title = announcement_title;
     }
 
-    public void setDate_time(String date_time) {
-        this.date_time = date_time;
+    public void setAnnouncement_datetime(String announcement_datetime) {
+        this.announcement_datetime = announcement_datetime;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setAnnouncement_desc(String announcement_desc) {
+        this.announcement_desc = announcement_desc;
     }
 
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
+    public void setAnnouncement_image(String announcement_image) {
+        this.announcement_image = announcement_image;
     }
 }

@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.infotsav.test.R;
 
 import java.util.List;
@@ -40,18 +41,21 @@ public class SponsorsAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = View.inflate(mContext,R.layout.sponsors_list,null);
-        TextView person_name=(TextView)view.findViewById(R.id.person_name);
-        TextView person_email=(TextView)view.findViewById(R.id.person_email);
-        TextView person_department=(TextView)view.findViewById(R.id.person_department);
-       // TextView person_call=(TextView)view.findViewById(R.id.call_person_button);
-        ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
+        TextView sponsor_name=(TextView)view.findViewById(R.id.sponsor_name);
+        TextView sponsor_level=(TextView)view.findViewById(R.id.sponsor_level);
+        TextView sponsor_dept=(TextView)view.findViewById(R.id.sponsor_department);
+        ImageView sponsor_image=(ImageView)view.findViewById(R.id.sponsor_image);
+        String url = mSponsors_detailslist.get(position).getSponsor_image();
+        if(url!=null) {
+            Glide.with(mContext).load(url).into(sponsor_image);
+
+        }
 
 
 
-        person_name.setText(mSponsors_detailslist.get(position).getName());
-        person_email.setText(mSponsors_detailslist.get(position).getSponsorship1());
-        person_department.setText(mSponsors_detailslist.get(position).getSponsorship2());
-        person_image.setImageResource(mSponsors_detailslist.get(position).getImage());
+        sponsor_name.setText(mSponsors_detailslist.get(position).getSponsor_name());
+        sponsor_level.setText(mSponsors_detailslist.get(position).getSponsor_level());
+        sponsor_dept.setText(mSponsors_detailslist.get(position).getSponsor_dept());
         view.setTag(mSponsors_detailslist.get(position).getId());
         return view;
     }

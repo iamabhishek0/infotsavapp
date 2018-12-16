@@ -2,9 +2,6 @@ package com.infotsav.test.Main_Activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +51,7 @@ public class ContactusAdapter extends BaseAdapter {
         TextView person_department=(TextView)view.findViewById(R.id.person_department);
 
         ImageView person_call=(ImageView) view.findViewById(R.id.call_person_button);
-        ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
+        ImageView person_image=(ImageView)view.findViewById(R.id.person_image);
 
         String url = mContactus_detailslist.get(position).getImage();
         if(url!=null) {
