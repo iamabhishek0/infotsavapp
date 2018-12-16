@@ -20,7 +20,7 @@
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/person_photo"
+                    android:id="@+id/sponsor_image"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:scaleType="centerCrop"
@@ -34,7 +34,7 @@
                     android:layout_gravity="center"
                     android:padding="8dp">
                     <TextView
-                        android:id="@+id/person_name"
+                        android:id="@+id/sponsor_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="2dp"
@@ -45,7 +45,7 @@
                         android:layout_gravity="center"/>
 
                     <TextView
-                        android:id="@+id/person_email"
+                        android:id="@+id/sponsor_level"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
@@ -55,7 +55,7 @@
                         android:layout_gravity="center"/>
 
                     <TextView
-                        android:id="@+id/person_department"
+                        android:id="@+id/sponsor_department"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="1dp"

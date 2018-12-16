@@ -25,11 +25,11 @@ public class SponsorsActivity extends AppCompatActivity {
 
         lvsponsors=(ListView)findViewById(R.id.listview_sponsors);
         mSponsors_detailslist =new ArrayList<>();
-        mSponsors_detailslist.add(new Sponsors_details(1,"THE MAANSINGH","Co-Sponsor","EDM Night",R.drawable.restaurant));
-        mSponsors_detailslist.add(new Sponsors_details(1,"THE MAANSINGH","Co-Sponsor","EDM Night",R.drawable.restaurant));
-        mSponsors_detailslist.add(new Sponsors_details(1,"THE MAANSINGH","Co-Sponsor","EDM Night",R.drawable.restaurant));
-        mSponsors_detailslist.add(new Sponsors_details(1,"THE MAANSINGH","Co-Sponsor","EDM Night",R.drawable.restaurant));
-        mSponsors_detailslist.add(new Sponsors_details(1,"THE MAANSINGH","Co-Sponsor","EDM Night",R.drawable.restaurant));
+        mSponsors_detailslist.add(new Sponsors_details("1","THE MAANSINGH","Co-Sponsor","EDM Night","R.drawable.restaurant"));
+        mSponsors_detailslist.add(new Sponsors_details("1","THE MAANSINGH","Co-Sponsor","EDM Night","R.drawable.restaurant"));
+        mSponsors_detailslist.add(new Sponsors_details("1","THE MAANSINGH","Co-Sponsor","EDM Night","R.drawable.restaurant"));
+        mSponsors_detailslist.add(new Sponsors_details("1","THE MAANSINGH","Co-Sponsor","EDM Night","R.drawable.restaurant"));
+        mSponsors_detailslist.add(new Sponsors_details("1","THE MAANSINGH","Co-Sponsor","EDM Night","R.drawable.restaurant"));
 
         adapter=new SponsorsAdapter(getApplicationContext(), mSponsors_detailslist);
         lvsponsors.setAdapter(adapter);
