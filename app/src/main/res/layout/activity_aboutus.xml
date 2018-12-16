@@ -1,126 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     tools:context=".Main_Activities.AboutusActivity">
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="29dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
         <TextView
-            android:id="@+id/t1"
+            android:id="@+id/title_aboutus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:fontFamily="@font/thorragnarok"
             android:text="title"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="25sp"
-
-            android:textStyle="bold"/>
+            android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/t2"
+            android:id="@+id/aboutus_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:fontFamily="@font/captianmarvelfont"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15dp"
             android:text="description"
             />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_gravity="center"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="190dp">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/searchImageButton"
-
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-
-
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="282dp"
-                android:layout_marginBottom="11dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:background="@drawable/fb"
                 android:onClick="fb" />
 
             <ImageButton
-                android:id="@+id/searchImageButton"
-
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-
-                android:layout_marginTop="12dp"
-                android:layout_marginRight="194dp"
-                android:layout_marginBottom="0dp"
+                android:id="@+id/searchImageButton1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
                 android:background="@drawable/insta"
                 android:onClick="inst" />
 
             <ImageButton
-                android:id="@+id/searchImageButton"
-
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="11dp"
-                android:layout_marginRight="107dp"
-                android:layout_marginBottom="3dp"
+                android:id="@+id/searchImageButton2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
                 android:background="@drawable/twitter"
                 android:onClick="twi" />
 
             <ImageButton
-                android:id="@+id/searchImageButton"
-
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="19dp"
-                android:layout_marginBottom="0dp"
+                android:id="@+id/searchImageButton3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
                 android:background="@drawable/linkedin"
                 android:onClick="lin" />
-
-        </RelativeLayout>
+        </LinearLayout>
 
         <ImageButton
             android:id="@+id/button"
-            android:layout_width="256dp"
-            android:layout_height="66dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
             android:layout_gravity="center"
             android:background="@drawable/web1"
-            android:onClick="web"
-            tools:layout_editor_absoluteX="77dp"
-            tools:layout_editor_absoluteY="211dp" />
-
+            android:onClick="web"/>
 
     </LinearLayout>
 
 
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -15,19 +15,23 @@ public class AboutusActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutus);
-        TextView mtitle= (TextView) findViewById(R.id.t1);
+        TextView mtitle= (TextView) findViewById(R.id.title_aboutus);
 
-        TextView mtext= (TextView) findViewById(R.id.t2);
+        TextView mtext= (TextView) findViewById(R.id.aboutus_description);
         mtitle.setText("ABOUT US");
         StringBuilder stringBuilder= new StringBuilder();
-        String para="Infotsav is the techno-managerial fest of the institute , aimed at nurturing creativity" +
-                " and innovation among the youth in a competitive as well as a recreational manner. " +
-                "Participants hail from premier technical and managerial institutions of the region,and from a wide range of backgrounds. " +
-                "Sponsored by businesses behind cutting-edge technologies,it has got everything to boast its status as a national-level " +
-                "technical festival. Events range from online Contests live Trave Trace to nerve-wrecking hackathons, mind boggling quizzes," +
-                " intensive coding contests and perhaps everything in between. Besides Prize Money, exposure at the national level serves " +
-                "as a great incentive for the participants. From 8th-9th February, every brain out there that has got the guts " +
-                "to battle it out in the wars of grey matter ,will be fighting in every domain possible.";
+        String para="Infotsav is the techno-managerial fest of the institute, " +
+                "aimed at nurturing creativity and innovation among the youth in a " +
+                "competitive as well as a recreational manner. Participants hail " +
+                "from premier technical and managerial institutions of the region," +
+                "and from a wide range of backgrounds. Sponsored by businesses behind " +
+                "cutting-edge technologies,it has got everything to boast its status " +
+                "as a national-level technical festival. Events range from online Contests " +
+                "live Trave Trace to nerve-wrecking hackathons, mind boggling quizzes, " +
+                "intensive coding contests and perhaps everything in between. Besides Prize Money, " +
+                "exposure at the national level serves as a great incentive for the participants. " +
+                "From 8th-9th February, every brain out there that has got the guts to battle " +
+                "it out in the wars of grey matter ,will be fighting in every domain possible.";
 
             stringBuilder.append(para);
           mtext.setText(stringBuilder.toString());
