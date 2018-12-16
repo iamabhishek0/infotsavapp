@@ -10,7 +10,7 @@ public class Sponsors_details {
     public Sponsors_details() {
     }
 
-    public Sponsors_details(String id, String sponsor_name, String sponsor_level, String sponsor_image, String sponsor_dept) {
+    public Sponsors_details(String id, String sponsor_name, String sponsor_level,  String sponsor_dept,String sponsor_image) {
         this.id = id;
         this.sponsor_name = sponsor_name;
         this.sponsor_level = sponsor_level;

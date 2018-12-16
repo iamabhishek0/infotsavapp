@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.infotsav.test.R;
 
 import java.util.List;
@@ -44,13 +45,17 @@ public class SponsorsAdapter extends BaseAdapter {
         TextView sponsor_level=(TextView)view.findViewById(R.id.sponsor_level);
         TextView sponsor_dept=(TextView)view.findViewById(R.id.sponsor_department);
         ImageView sponsor_image=(ImageView)view.findViewById(R.id.sponsor_image);
+        String url = mSponsors_detailslist.get(position).getSponsor_image();
+        if(url!=null) {
+            Glide.with(mContext).load(url).into(sponsor_image);
+
+        }
 
 
 
         sponsor_name.setText(mSponsors_detailslist.get(position).getSponsor_name());
         sponsor_level.setText(mSponsors_detailslist.get(position).getSponsor_level());
         sponsor_dept.setText(mSponsors_detailslist.get(position).getSponsor_dept());
-        //sponsor_image.setImageResource(mSponsors_detailslist.get(position).getSponsor_image());
         view.setTag(mSponsors_detailslist.get(position).getId());
         return view;
     }

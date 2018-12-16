@@ -23,9 +23,9 @@
 
             <ImageView
                 android:id="@+id/sponsor_image"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/image"
+                app:srcCompat="@drawable/restaurant"
                 android:layout_gravity="center"/>
 
             <LinearLayout
