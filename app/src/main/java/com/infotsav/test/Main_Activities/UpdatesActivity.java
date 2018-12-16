@@ -25,10 +25,10 @@ public class UpdatesActivity extends AppCompatActivity {
 
         lvupdates=(ListView)findViewById(R.id.listview_updates);
         mUpdates_detailslist =new ArrayList<>();
-        mUpdates_detailslist.add(new Updates_details(1,"ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap",R.drawable.restaurant));
-        mUpdates_detailslist.add(new Updates_details(1,"ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap",R.drawable.restaurant));
-        mUpdates_detailslist.add(new Updates_details(1,"ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap",R.drawable.restaurant));
-        mUpdates_detailslist.add(new Updates_details(1,"ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap",R.drawable.restaurant));
+        mUpdates_detailslist.add(new Updates_details("1","ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap","R.drawable.restaurant"));
+        mUpdates_detailslist.add(new Updates_details("1","ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap","R.drawable.restaurant"));
+        mUpdates_detailslist.add(new Updates_details("1","ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap","R.drawable.restaurant"));
+        mUpdates_detailslist.add(new Updates_details("1","ANNOUNCEMENT","13/12 7:00PM","The opening ceremony has begun.Reach Main Audi asap","R.drawable.restaurant"));
 
         adapter=new UpdatesAdapter(getApplicationContext(), mUpdates_detailslist);
         lvupdates.setAdapter(adapter);

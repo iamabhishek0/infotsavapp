@@ -43,15 +43,15 @@ public class ContactusAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = View.inflate(mContext,R.layout.contactus_list,null);
-        TextView person_name=(TextView)view.findViewById(R.id.sponsor_name);
+        TextView person_name=(TextView)view.findViewById(R.id.person_name);
 
-        TextView person_email=(TextView)view.findViewById(R.id.sponsor_level);
+        TextView person_email=(TextView)view.findViewById(R.id.person_email);
 
 
-        TextView person_department=(TextView)view.findViewById(R.id.sponsor_department);
+        TextView person_department=(TextView)view.findViewById(R.id.person_department);
 
         ImageView person_call=(ImageView) view.findViewById(R.id.call_person_button);
-        ImageView person_image=(ImageView)view.findViewById(R.id.sponsor_image);
+        ImageView person_image=(ImageView)view.findViewById(R.id.person_image);
 
         String url = mContactus_detailslist.get(position).getImage();
         if(url!=null) {

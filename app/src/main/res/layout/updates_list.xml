@@ -18,17 +18,8 @@
             android:orientation="vertical"
             android:layout_gravity="center"
             android:padding="8dp">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/sponsor_image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background"
-                android:translationZ="4dp"
-                android:layout_gravity="center"
-                android:visibility="gone"/>
             <TextView
-                android:id="@+id/sponsor_name"
+                android:id="@+id/announcement_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -39,7 +30,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/sponsor_level"
+                android:id="@+id/announcement_datetime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -49,7 +40,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/sponsor_department"
+                android:id="@+id/announcement_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
