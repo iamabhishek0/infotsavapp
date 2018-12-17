@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.infotsav.test.R;
 import com.ramotion.foldingcell.FoldingCell;
 
@@ -24,6 +25,7 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
 
     private HashSet<Integer> unfoldedIndexes = new HashSet<>();
     private View.OnClickListener defaultRequestBtnClickListener;
+    private List<Item> mitem;
 
     public FoldingCellListAdapter(Context context, List<Item> objects) {
         super(context, 0, objects);
@@ -77,13 +79,25 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         viewHolder.event_detail_short.setText(item.getEvent_detail_short());
         viewHolder.venue_event.setText(item.getVenue_event());
         viewHolder.time_event.setText(item.getTime_event());
-        viewHolder.event_image.setImageResource(item.getEvent_image());
+        //viewHolder.event_image.setImageResource(item.getEvent_image());
+        String url = item.getEvent_image();
+        if(url!=null) {
+            Glide.with(getContext()).load(url).into(viewHolder.event_image);
+
+        }
         viewHolder.event_description_long.setText(item.getEvent_description_long());
         viewHolder.event_head_names.setText(item.getEvent_head_names());
         viewHolder.event_organizers_name.setText(item.getEvent_organizers_name());
         viewHolder.event_rules.setText(item.getEvent_rules());
         viewHolder.event_name.setText(item.getEvent_name());
-        viewHolder.head_event_image.setImageResource(item.getHead_event_image());
+        //viewHolder.head_event_image.setImageResource(item.getHead_event_image());
+        String url1 =item.getHead_event_image();
+        if(url1!=null) {
+            viewHolder.head_event_image.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            Glide.with(getContext()).load(url1).into(viewHolder.head_event_image);//sir ek baar app phone mae chala k samaj aae ga
+            // updaed hai branch? nahi sir 2 min test mae karta hu
+
+        }
 
         // set custom btn handler for list item from that item
         if (item.getRequestBtnClickListener() != null) {
