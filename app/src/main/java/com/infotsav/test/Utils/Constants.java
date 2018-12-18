@@ -31,6 +31,20 @@ public class Constants {
     public static final int back10=R.drawable.b10;
     public static final int back11=R.drawable.b11;
     public static final int back12=R.drawable.b12;
+    public static final String fact1="There is a copy of the Guardians of the Galaxy Vol. 2 Script written specifically for Vin Diesel";
+    public static final String fact2="The characters in Black Panther are speaking a real African language";
+    public static final String fact3="The final battle in Black Panther is more symbolic than you think";
+    public static final String fact4="In the comic books, Thanos erases half of the life in the universe";
+    public static final String fact5="In the comic books, Thanos erases half of the life in the universe";
+    public static final String fact6="Tony Stark is still nursing an injured left arm";
+    public static final String fact7="Marvel may be developing that Black Widow movie after all";
+    public static final String fact8="Captain America’s costume in Infinity War is based on two separate looks from the comics";
+    public static final String fact9="The Venom Trailer used music from the Infinity War Trailer";
+    public static final String fact10="";
+    public static final String fact11="";
+    public static final String fact12="";
+
+
 
 
 }

@@ -106,9 +106,9 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         //viewHolder.event_image.setImageResource(item.getEvent_image());
 
 
-        //seting background
+        //setting background
 
-        int index = getRandomNumber(12);
+        int index = getRandomNumber();
         if(index<12)
         {
             Glide.with(getContext()).load(backgrounduri[index]).into(new SimpleTarget<Drawable>() {
@@ -150,7 +150,7 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         return cell;
     }
 
-    private int getRandomNumber(int i) {
+    private int getRandomNumber() {
 
         return new Random().nextInt((11 - 0) + 1);
     }
