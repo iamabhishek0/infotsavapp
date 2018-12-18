@@ -40,18 +40,13 @@ public class UpdatesAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = View.inflate(mContext,R.layout.updates_list,null);
-        TextView person_name=(TextView)view.findViewById(R.id.person_name);
-        TextView person_email=(TextView)view.findViewById(R.id.person_email);
-        TextView person_department=(TextView)view.findViewById(R.id.person_department);
-        // TextView person_call=(TextView)view.findViewById(R.id.call_person_button);
-        ImageView person_image=(ImageView)view.findViewById(R.id.person_photo);
+        TextView announcement_title=(TextView)view.findViewById(R.id.announcement_title);
+        TextView announcement_datetime=(TextView)view.findViewById(R.id.announcement_datetime);
+        TextView announcement_description=(TextView)view.findViewById(R.id.announcement_description);
 
-
-
-        person_name.setText(mUpdates_detailslist.get(position).getHeading());
-        person_email.setText(mUpdates_detailslist.get(position).getDate_time());
-        person_department.setText(mUpdates_detailslist.get(position).getData());
-        person_image.setImageResource(mUpdates_detailslist.get(position).getImage());
+        announcement_title.setText(mUpdates_detailslist.get(position).getAnnouncement_title());
+        announcement_datetime.setText(mUpdates_detailslist.get(position).getAnnouncement_datetime());
+        announcement_description.setText(mUpdates_detailslist.get(position).getAnnouncement_desc());
         view.setTag(mUpdates_detailslist.get(position).getId());
         return view;
     }
