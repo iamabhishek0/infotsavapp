@@ -53,4 +53,5 @@ public class Constants {
     public static final String fact20="Tony Stark Isn’t The Richest Avenger, Black panther is";
     public static final String fact21="The Marvel Cinematic Universe is the highest-grossing film franchise of all time";
     public static final String fact22="While Deadpool is a Marvel property, it is not (currently) part of the Marvel Cinematic Universe";
+    public static int indexval=0;
 }

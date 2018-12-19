@@ -52,6 +52,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="@font/deadpoolfont"
+            android:text="This is gonna Work\n CUZ I DON'T KNOW WHAT I'M GONNA DO IF IT DOESN'T"
+            android:gravity="center"/>
 
         <ImageView
             android:id="@+id/head_event_image"
