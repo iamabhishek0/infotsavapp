@@ -12,7 +12,17 @@ import static com.infotsav.test.Utils.Constants.fact1;
 import static com.infotsav.test.Utils.Constants.fact10;
 import static com.infotsav.test.Utils.Constants.fact11;
 import static com.infotsav.test.Utils.Constants.fact12;
+import static com.infotsav.test.Utils.Constants.fact13;
+import static com.infotsav.test.Utils.Constants.fact14;
+import static com.infotsav.test.Utils.Constants.fact15;
+import static com.infotsav.test.Utils.Constants.fact16;
+import static com.infotsav.test.Utils.Constants.fact17;
+import static com.infotsav.test.Utils.Constants.fact18;
+import static com.infotsav.test.Utils.Constants.fact19;
 import static com.infotsav.test.Utils.Constants.fact2;
+import static com.infotsav.test.Utils.Constants.fact20;
+import static com.infotsav.test.Utils.Constants.fact21;
+import static com.infotsav.test.Utils.Constants.fact22;
 import static com.infotsav.test.Utils.Constants.fact3;
 import static com.infotsav.test.Utils.Constants.fact4;
 import static com.infotsav.test.Utils.Constants.fact5;
@@ -24,7 +34,8 @@ import static com.infotsav.test.Utils.Constants.fact9;
 public class ExampleDataset {
 
     private ArrayList<ECCardData> dataset;
-    private String facts[]={fact1,fact2,fact3,fact4,fact5,fact6,fact7,fact8,fact9,fact10,fact11,fact12};
+    private String facts[]={fact1,fact2,fact3,fact4,fact5,fact6,fact7,fact8,fact9,fact10,fact11,fact12,
+            fact13,fact14,fact15,fact16,fact17,fact18,fact19,fact20,fact21,fact22};
 
     public ExampleDataset() {
         dataset = new ArrayList<>();
@@ -122,7 +133,7 @@ public class ExampleDataset {
     }
     private int getRandomNumber() {
 
-        return new Random().nextInt((11 - 0) + 1);
+        return new Random().nextInt((21 - 0) + 1);
     }
 
     public List<ECCardData> getDataset() {
