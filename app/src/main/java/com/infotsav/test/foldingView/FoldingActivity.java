@@ -1,5 +1,6 @@
 package com.infotsav.test.foldingView;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -20,6 +21,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.infotsav.test.Main_Activities.Register_Activity;
 import com.infotsav.test.R;
 import com.ramotion.foldingcell.FoldingCell;
 
@@ -144,7 +146,9 @@ public class FoldingActivity extends AppCompatActivity {
                 adapter.setDefaultRequestBtnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(), "DEFAULT HANDLER FOR ALL BUTTONS", Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(getApplicationContext(),Register_Activity.class);
+                        startActivity(intent);
+                        Toast.makeText(getApplicationContext(), "Please enter your details", Toast.LENGTH_LONG).show();
                     }
                 });
                 theListView.setAdapter(adapter);
