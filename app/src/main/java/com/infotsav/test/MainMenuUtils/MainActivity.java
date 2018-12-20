@@ -20,10 +20,11 @@ import com.infotsav.test.Main_Activities.ContactusActivity;
 import com.infotsav.test.Main_Activities.HomeActivity;
 import com.infotsav.test.Main_Activities.Register_Activity;
 import com.infotsav.test.Main_Activities.TreasurehuntActivity;
+import com.infotsav.test.PagerActivity;
 import com.infotsav.test.R;
 import com.infotsav.test.Main_Activities.SponsorsActivity;
 import com.infotsav.test.Main_Activities.UpdatesActivity;
-import com.infotsav.test.Utils.Constants;
+import com.infotsav.test.Util.Constants;
 import com.ramotion.expandingcollection.ECBackgroundSwitcherView;
 import com.ramotion.expandingcollection.ECCardData;
 import com.ramotion.expandingcollection.ECPagerView;
@@ -106,7 +107,7 @@ public class MainActivity extends Activity {
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Treasurehunt))
                         {
-                            startActivity(new Intent(MainActivity.this, TreasurehuntActivity.class));
+                            startActivity(new Intent(MainActivity.this, PagerActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Sponsors))
                         {
