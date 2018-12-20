@@ -15,16 +15,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.firebase.database.FirebaseDatabase;
 import com.infotsav.test.Main_Activities.AboutusActivity;
-import com.infotsav.test.Main_Activities.LoginActivity;
 import com.infotsav.test.Main_Activities.ContactusActivity;
-import com.infotsav.test.Main_Activities.EventsActivity;
 import com.infotsav.test.Main_Activities.HomeActivity;
 import com.infotsav.test.Main_Activities.Register_Activity;
 import com.infotsav.test.Main_Activities.TreasurehuntActivity;
 import com.infotsav.test.R;
-import com.infotsav.test.Main_Activities.RegisterActivity;
 import com.infotsav.test.Main_Activities.SponsorsActivity;
 import com.infotsav.test.Main_Activities.UpdatesActivity;
 import com.infotsav.test.Utils.Constants;
@@ -98,7 +94,7 @@ public class MainActivity extends Activity {
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Events))
                         {
-                            startActivity(new Intent(MainActivity.this, EventsActivity.class));
+                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
                         }
                         else if(cardData.getHeadTitle().equals(Constants.Register))
                         {
