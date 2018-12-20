@@ -9,6 +9,8 @@ import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -36,6 +38,7 @@ import static com.infotsav.test.Utils.Constants.back6;
 import static com.infotsav.test.Utils.Constants.back7;
 import static com.infotsav.test.Utils.Constants.back8;
 import static com.infotsav.test.Utils.Constants.back9;
+import static com.infotsav.test.Utils.Constants.indexval;
 
 /**
  * Simple example of ListAdapter for using with Folding Cell
@@ -66,6 +69,12 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
             viewHolder = new ViewHolder();
             LayoutInflater vi = LayoutInflater.from(getContext());
             cell = (FoldingCell) vi.inflate(R.layout.cell, parent, false);
+            AlphaAnimation anim1 = new AlphaAnimation(0.0f, 1.0f);
+            anim1.setStartOffset(500);
+            anim1.setDuration(1000);
+            //anim1.setRepeatCount(10);
+            //anim1.setRepeatMode(Animation.ZORDER_BOTTOM);
+            cell.startAnimation(anim1);
             // binding view parts to view holder
             viewHolder.price = cell.findViewById(R.id.title_price);
             viewHolder.time = cell.findViewById(R.id.title_time_label);
@@ -109,8 +118,21 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         //setting background
 
         int index = getRandomNumber();
-        if(index<12)
+        if(index<12&&indexval!=index)
         {
+            indexval=index;
+            Glide.with(getContext()).load(backgrounduri[index]).into(new SimpleTarget<Drawable>() {
+                @Override
+                public void onResourceReady(Drawable resource, Transition<? super Drawable> transition) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        viewHolder.cardBackground.setBackground(resource);
+                    }
+                }
+            });
+        }
+        else {
+            index = getRandomNumber();
+            //indexval=index;
             Glide.with(getContext()).load(backgrounduri[index]).into(new SimpleTarget<Drawable>() {
                 @Override
                 public void onResourceReady(Drawable resource, Transition<? super Drawable> transition) {
@@ -136,6 +158,12 @@ public class FoldingCellListAdapter extends ArrayAdapter<Item> {
         //viewHolder.head_event_image.setImageResource(item.getHead_event_image());
         String url1 =item.getHead_event_image();
         if(url1!=null) {            Glide.with(getContext()).load(url1).into(viewHolder.head_event_image);
+            AlphaAnimation anim = new AlphaAnimation(0.0f, 1.0f);
+            anim.setStartOffset(3000);
+            anim.setDuration(1000);
+            //anim.setRepeatCount(0);
+            //anim.setRepeatMode(Animation.REVERSE);
+            viewHolder.head_event_image.startAnimation(anim);
 
         }
 
