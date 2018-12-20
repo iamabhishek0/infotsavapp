@@ -2,7 +2,6 @@
 <android.support.v7.widget.CardView android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="30dp"
     android:translationZ="4dp"
     android:outlineAmbientShadowColor="@android:color/black"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -46,10 +45,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:hint="test"
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
             android:textSize="26sp"
-            android:visibility="gone"/>
+            android:visibility="visible"/>
 
         <TextView
             android:id="@+id/title_time_label"
@@ -60,7 +60,8 @@
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:visibility="gone"/>
+            android:hint="test"
+            android:visibility="visible"/>
 
         <TextView
             android:id="@+id/title_date_label"
@@ -71,7 +72,8 @@
             android:layout_alignParentStart="true"
             android:textColor="@android:color/white"
             android:textSize="12sp"
-            android:visibility="gone"/>
+            android:hint="test"
+            android:visibility="visible"/>
 
 
     </RelativeLayout>
@@ -106,8 +108,11 @@
             android:gravity="center"
             android:lines="2"
             android:maxLines="2"
+            android:hint="test"
+            android:padding="8dp"
+            android:visibility="visible"
             android:textColor="#F9FAFC"
-            android:textSize="30sp" />
+            android:textSize="18sp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,16 +153,17 @@
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"
             android:singleLine="true"
+            android:gravity="center"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            android:visibility="gone" />
+            android:visibility="visible"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#F9FAFC"
-            android:textSize="20dp"
+            android:textSize="14dp"
             android:fontFamily="@font/captianamericafont"
             android:text="TIME" />
         <TextView
@@ -187,11 +193,11 @@
             android:textColor="#F9FAFC"
             android:fontFamily="@font/captianamericafont"
             android:text="VENUE"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/venue_event"
-            android:textSize="15dp"
+            android:textSize="14dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#F9FAFC"

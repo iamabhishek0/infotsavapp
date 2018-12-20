@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/layout_bg"
     android:translationZ="4dp"
+    android:background="@drawable/layout_bg"
     android:outlineAmbientShadowColor="#000000"
     android:visibility="gone">
 
@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Trove Trace"
+            android:padding="8dp"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -163,7 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 android:text="DESCRIPTION" />
 
             <ImageView
@@ -185,7 +186,7 @@
                 android:layout_toRightOf="@id/content_avatar"
                 android:text="@string/client_name_mock"
                 android:textColor="@color/mainTextColor"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -261,7 +262,7 @@
                     android:layout_below="@id/content_from_badge"
                     android:text="Siddharth Vaish\nParth Vaish"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -273,7 +274,7 @@
                     android:layout_below="@id/event_head_names"
                     android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:visibility="gone"/>
 
@@ -302,7 +303,7 @@
                     android:layout_below="@id/content_to_badge"
                     android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -314,7 +315,7 @@
                     android:layout_below="@id/event_organizers_name"
                     android:text="Siddharth Vaish"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:visibility="gone"/>
 
@@ -369,7 +370,7 @@
                     android:layout_below="@id/content_delivery_date_badge"
                     android:text="To be announced"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -381,7 +382,7 @@
                     android:layout_below="@id/event_rules"
                     android:text="@string/delivery_date_mock"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:visibility="gone"/>
 
             </RelativeLayout>
@@ -410,7 +411,7 @@
                     android:layout_below="@id/content_deadline_badge"
                     android:text="@string/deadline_time_mock"
                     android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -422,7 +423,7 @@
                     android:layout_below="@id/content_deadline_time"
                     android:text=""
                     android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -438,7 +439,7 @@
             android:text="REGISTER"
             android:textAlignment="center"
             android:textColor="@color/mainTextColor"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
