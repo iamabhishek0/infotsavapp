@@ -47,22 +47,10 @@ public class ExampleDataset {
         int index5 = getRandomNumber();
         int index6 = getRandomNumber();
         int index7 = getRandomNumber();
-        int index8 = getRandomNumber();
-
-
-        CardData item7 = new CardData();
-        item7.setMainBackgroundResource(R.drawable.blackwidow60port);
-        item7.setHeadBackgroundResource(R.drawable.blackwidow60land);
-        item7.setHeadTitle("Home");
-        item7.setPersonMessage("This is the home card");
-        item7.setPersonName(facts[index8]);
-        item7.setPersonPictureResource(R.drawable.marjorie_ellis);
-        item7.setListItems(prepareCommentsArray());
-        dataset.add(item7);
 
         CardData item6 = new CardData();
-        item6.setMainBackgroundResource(R.drawable.ironman60);
-        item6.setHeadBackgroundResource(R.drawable.ironman60land);
+        item6.setMainBackgroundResource(R.drawable.blackwidow60port);
+        item6.setHeadBackgroundResource(R.drawable.blackwidow60land);
         item6.setHeadTitle("Events");
         item6.setPersonMessage("Captain America’s costume in Infinity War is based on two separate looks from the comics");
         item6.setPersonName(facts[index7]);
@@ -121,8 +109,8 @@ public class ExampleDataset {
         dataset.add(item1a);
 
         CardData item1 = new CardData();
-        item1.setMainBackgroundResource(R.drawable.ultron60port);
-        item1.setHeadBackgroundResource(R.drawable.ultron60land);
+        item1.setMainBackgroundResource(R.drawable.ironman60);
+        item1.setHeadBackgroundResource(R.drawable.ironman60land);
         item1.setHeadTitle("Contact Us");
         item1.setPersonMessage("Cur adelphis studere?");
         item1.setPersonName(facts[index1]);
