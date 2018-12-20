@@ -31,6 +31,7 @@ public class PagerActivity extends AppCompatActivity {
         setTitle("GlazyViewPager");*/
 
         mPager = (GlazyViewPager) findViewById(R.id.pager);
+        mPager.hasOnClickListeners();
         mPagerAdapter = new GlazyFragmentPagerAdapter(getSupportFragmentManager(), getApplicationContext());
 
         Resources resources = getApplicationContext().getResources();
@@ -76,6 +77,17 @@ public class PagerActivity extends AppCompatActivity {
                 "long-running NBC television sitcom Friends. Perry has appeared in a number " +
                 "of films, including Fools Rush In (1997), The Whole Nine Yards (2000)," +
                 " and 17 Again (2009).";
+
+
+        mPagerAdapter.addCardItem(
+                new GlazyCard()
+                        .withTitle("MATT LE BLANC")
+                        .withSubTitle("ACTOR")
+                        .withDescription(desc_matt.toUpperCase())
+                        .withImageRes(R.drawable.thor60port)
+                        .withImageCutType(GlazyImageView.ImageCutType.WAVE)
+                        .withImageCutHeightDP(40)
+        );
 
         mPagerAdapter.addCardItem(
                 new GlazyCard()

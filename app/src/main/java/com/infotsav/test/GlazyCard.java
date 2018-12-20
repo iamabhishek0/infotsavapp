@@ -1,6 +1,7 @@
 package com.infotsav.test;
 
 import android.graphics.Color;
+import android.widget.Button;
 
 import java.io.Serializable;
 
@@ -47,6 +48,7 @@ public class GlazyCard implements Serializable{
     private int mImageCutHeightDP;
 
     private int mBackgroundColor;
+    private Button button;
 
     public GlazyCard() {
 

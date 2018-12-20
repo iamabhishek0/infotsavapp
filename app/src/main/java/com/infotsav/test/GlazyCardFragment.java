@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class GlazyCardFragment extends Fragment {
 
@@ -36,6 +37,12 @@ public class GlazyCardFragment extends Fragment {
 
         View v =  inflater.inflate(R.layout.layout_page, container, false);
         v.setBackgroundColor(card.getBackgroundColor());
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"Working",Toast.LENGTH_LONG).show();
+            }
+        });
 
         TextView description = (TextView) v.findViewById(R.id.description_text);
         description.setText(card.getDescription());
