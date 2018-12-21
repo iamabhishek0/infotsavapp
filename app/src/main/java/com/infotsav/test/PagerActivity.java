@@ -91,7 +91,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("ONSITE")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_matt.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.thoronsite)
                         .withImageCutType(GlazyImageView.ImageCutType.WAVE)
                         .withImageCutHeightDP(40)
         );
@@ -102,7 +102,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("ROBOTICS")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_matt.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.ultronrobotics)
                         .withImageCutType(GlazyImageView.ImageCutType.ARC)
                         .withImageCutHeightDP(40)
         );
@@ -112,7 +112,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("GAMIACS")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_matt.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.hulkgames)
                         .withImageCutType(GlazyImageView.ImageCutType.LINE_POSITIVE)
                         .withImageCutHeightDP(40)
         );
@@ -121,7 +121,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("MANAGERIAL")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_corteny.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.captainmanagerial)
                         .withImageCutType(GlazyImageView.ImageCutType.WAVE)
                         .withImageCutHeightDP(40)
         );
@@ -130,7 +130,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("SCHOOL")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_david.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.spidermanschool)
                         .withImageCutType(GlazyImageView.ImageCutType.ARC)
                         .withImageCutHeightDP(40)
         );
@@ -139,7 +139,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("TECHNICAL")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_jenif.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.irontechnical)
                         .withImageCutType(GlazyImageView.ImageCutType.LINE_POSITIVE)
                         .withImageCutHeightDP(40)
         );
@@ -148,7 +148,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("ONLINE")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_lisa.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.rocketonline)
                         .withImageCutType(GlazyImageView.ImageCutType.WAVE)
                         .withImageCutHeightDP(40)
         );
@@ -157,7 +157,7 @@ public class PagerActivity extends AppCompatActivity {
                         .withTitle("ALL")
                         .withSubTitle("EVENTS")
                         .withDescription(desc_matthew.toUpperCase())
-                        .withImageRes(R.drawable.thor60port)
+                        .withImageRes(R.drawable.thanosall)
                         .withImageCutType(GlazyImageView.ImageCutType.ARC)
                         .withImageCutHeightDP(40)
         );
