@@ -51,7 +51,7 @@ public class GlazyFragmentPagerAdapter extends AbstractFragmentPagerAdapter {
     @Override
     public Fragment instantiateFragment(int position) {
         GlazyCard card = cards.get(position);
-        return GlazyCardFragment.newInstance( card );
+        return GlazyCardFragment.newInstance( card);
     }
 
     @Override

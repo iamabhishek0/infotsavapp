@@ -1,19 +1,33 @@
 package com.infotsav.test;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.infotsav.test.foldingView.FoldingActivity;
+
+import static com.infotsav.test.Util.Constants.all;
+import static com.infotsav.test.Util.Constants.gamiacs;
+import static com.infotsav.test.Util.Constants.managerial;
+import static com.infotsav.test.Util.Constants.online;
+import static com.infotsav.test.Util.Constants.onsite;
+import static com.infotsav.test.Util.Constants.robotics;
+import static com.infotsav.test.Util.Constants.school;
+import static com.infotsav.test.Util.Constants.technical;
+
 public class GlazyCardFragment extends Fragment {
 
     private Context mContext;
     private GlazyCard card;
+    String str;
 
     public static GlazyCardFragment newInstance(GlazyCard card) {
         GlazyCardFragment glazyCardFragment = new GlazyCardFragment();
@@ -40,13 +54,134 @@ public class GlazyCardFragment extends Fragment {
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Working",Toast.LENGTH_LONG).show();
+                if(card.getTitle().equals("ALL"))
+                {
+                    str = "all";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+                    //Toast.makeText(getContext(),"Working",Toast.LENGTH_LONG).show();
+                }
+                else if(card.getTitle().equals("GAMIACS"))
+                {
+                    str = "gamiacs";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+                }
+                else if (card.getTitle().equals("MANAGERIAL")){
+                    str = "managerial";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("ONLINE")){
+                    str = "online";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("ONSITE")){
+                    str = "onsite";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("ROBOTICS")){
+                    str = "robotics";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("TECHNICAL")){
+                    str = "technical";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("SCHOOL")){
+                    str = "school";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+
             }
         });
 
         TextView description = (TextView) v.findViewById(R.id.description_text);
         description.setText(card.getDescription());
         description.setAlpha(0f);
+        description.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(card.getTitle().equals("ALL"))
+                {
+                    str = "all";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+                    //Toast.makeText(getContext(),"Working",Toast.LENGTH_LONG).show();
+                }
+                else if(card.getTitle().equals("GAMIACS"))
+                {
+                    str = "gamiacs";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+                }
+                else if (card.getTitle().equals("MANAGERIAL")){
+                    str = "managerial";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("ONLINE")){
+                    str = "online";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("ONSITE")){
+                    str = "onsite";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("ROBOTICS")){
+                    str = "robotics";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("TECHNICAL")){
+                    str = "technical";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+                else if (card.getTitle().equals("SCHOOL")){
+                    str = "school";
+                    Intent intent = new Intent(getContext(), FoldingActivity.class);
+                    intent.putExtra("message",str);
+                    startActivity(intent);
+
+                }
+
+            }
+        });
 
         GlazyImageView imgView = (GlazyImageView) v.findViewById(R.id.glazy_image_view);
         imgView.setImageRes(card.getImageRes());

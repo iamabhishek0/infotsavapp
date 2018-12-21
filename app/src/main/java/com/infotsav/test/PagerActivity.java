@@ -14,6 +14,14 @@ import com.infotsav.test.GlazyViewPager;
 import com.infotsav.test.R;
 import com.infotsav.test.Utils;
 
+import static com.infotsav.test.Util.Constants.all;
+import static com.infotsav.test.Util.Constants.gamiacs;
+import static com.infotsav.test.Util.Constants.managerial;
+import static com.infotsav.test.Util.Constants.online;
+import static com.infotsav.test.Util.Constants.onsite;
+import static com.infotsav.test.Util.Constants.robotics;
+import static com.infotsav.test.Util.Constants.school;
+import static com.infotsav.test.Util.Constants.technical;
 
 
 public class PagerActivity extends AppCompatActivity {
@@ -78,30 +86,40 @@ public class PagerActivity extends AppCompatActivity {
                 "of films, including Fools Rush In (1997), The Whole Nine Yards (2000)," +
                 " and 17 Again (2009).";
 
-
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("MATT LE BLANC")
-                        .withSubTitle("ACTOR")
+                        .withTitle("ONSITE")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_matt.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
                         .withImageCutType(GlazyImageView.ImageCutType.WAVE)
                         .withImageCutHeightDP(40)
         );
 
+
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("MATT LE BLANC")
-                        .withSubTitle("ACTOR")
+                        .withTitle("ROBOTICS")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_matt.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
-                        .withImageCutType(GlazyImageView.ImageCutType.WAVE)
+                        .withImageCutType(GlazyImageView.ImageCutType.ARC)
+                        .withImageCutHeightDP(40)
+        );
+
+        mPagerAdapter.addCardItem(
+                new GlazyCard()
+                        .withTitle("GAMIACS")
+                        .withSubTitle("EVENTS")
+                        .withDescription(desc_matt.toUpperCase())
+                        .withImageRes(R.drawable.thor60port)
+                        .withImageCutType(GlazyImageView.ImageCutType.LINE_POSITIVE)
                         .withImageCutHeightDP(40)
         );
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("COURTENY COX")
-                        .withSubTitle("ACTRESS")
+                        .withTitle("MANAGERIAL")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_corteny.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
                         .withImageCutType(GlazyImageView.ImageCutType.WAVE)
@@ -109,26 +127,26 @@ public class PagerActivity extends AppCompatActivity {
         );
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("DAVID SCHWIMMER")
-                        .withSubTitle("ACTOR")
+                        .withTitle("SCHOOL")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_david.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
-                        .withImageCutType(GlazyImageView.ImageCutType.WAVE)
+                        .withImageCutType(GlazyImageView.ImageCutType.ARC)
                         .withImageCutHeightDP(40)
         );
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("JENNIFER ANISTON")
-                        .withSubTitle("ACTRESS")
+                        .withTitle("TECHNICAL")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_jenif.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
-                        .withImageCutType(GlazyImageView.ImageCutType.WAVE)
+                        .withImageCutType(GlazyImageView.ImageCutType.LINE_POSITIVE)
                         .withImageCutHeightDP(40)
         );
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("LISA KUDROW")
-                        .withSubTitle("ACTRESS")
+                        .withTitle("ONLINE")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_lisa.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
                         .withImageCutType(GlazyImageView.ImageCutType.WAVE)
@@ -136,11 +154,11 @@ public class PagerActivity extends AppCompatActivity {
         );
         mPagerAdapter.addCardItem(
                 new GlazyCard()
-                        .withTitle("MATHEW PERRY")
-                        .withSubTitle("ACTOR")
+                        .withTitle("ALL")
+                        .withSubTitle("EVENTS")
                         .withDescription(desc_matthew.toUpperCase())
                         .withImageRes(R.drawable.thor60port)
-                        .withImageCutType(GlazyImageView.ImageCutType.WAVE)
+                        .withImageCutType(GlazyImageView.ImageCutType.ARC)
                         .withImageCutHeightDP(40)
         );
 

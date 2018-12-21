@@ -10,13 +10,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.infotsav.test.R;
 import com.infotsav.test.foldingView.FoldingActivity;
 
-public class HomeActivity extends AppCompatActivity {
+public class EventsActivity extends AppCompatActivity {
     String str;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_events);
         //TODO: Read the firebase docs for realtime database or firestore (which ever you prefer)
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
     }
